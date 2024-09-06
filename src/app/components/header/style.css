@@ -1,0 +1,68 @@
+.header-component {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.logo {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.nav-bar {
+    width: auto;
+    height: 80px;
+    display: flex;
+}
+
+.nav-btn {
+    width: 175px !important;
+    height: 80px !important;
+    color: #fff;
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+    padding: 5px;
+    font-size: 15px;
+
+    &:nth-child(1) {
+        background-color: #7EB7E4;
+        transition: 0.3s ease;
+
+        &:hover {
+            background-color: #6793b5;
+        }
+    }
+
+    &:nth-child(2) {
+        background-color: #679C6C;
+        transition: 0.3s ease;
+
+        &:hover {
+            background-color: #496e4d;
+        }
+    }
+
+    &:nth-child(3) {
+        background-color: #F89825;
+        transition: 0.3s ease;
+
+        &:hover {
+            background-color: #ad6b1b;
+        }
+    }
+
+    &:nth-child(4) {
+        background-color: #000;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}
