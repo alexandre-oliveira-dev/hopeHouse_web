@@ -1,5 +1,14 @@
 .section {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    min-height: 300px;
+}
+
+
+.section.background-fixed {
     height: 300px;
     background-image: url('./assets/background.png');
     background-repeat: no-repeat;
@@ -7,9 +16,39 @@
     background-attachment: fixed;
     background-position: top;
     position: relative;
-    overflow: hidden;
     margin-top: 80px;
     z-index: 0;
     display: grid;
     place-items: center;
+
+}
+
+.box-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+
+}
+
+.col-box-numbers {
+    display: grid;
+    place-items: center;
+    flex: 1;
+}
+
+.col-box-numbers>div {
+    width: 50%;
+}
+
+.col-box-numbers>div>h2 {
+    font-size: 75px;
+    color: #F89825;
+    margin: 0;
+}
+
+.col-box-numbers>div>span {
+    font-size: 25px;
+    color: #121212;
+    margin: 0;
 }
