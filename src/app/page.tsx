@@ -7,6 +7,8 @@ import Title from "antd/es/typography/Title";
 import animal from "./assets/animal.png";
 import leao from "./assets/leao.png";
 import elefante from "./assets/elefante.png";
+import ballet from "./assets/ballet.png";
+import footbolBoys from "./assets/footbol-boys.png";
 import {MdWarning} from "react-icons/md";
 
 export default function Home() {
@@ -73,7 +75,11 @@ export default function Home() {
       <section className="section">
         <Col style={{width: "100%", height: "100%"}}>
           <Row style={{width: "100%", height: "300px"}}>
-            <div style={{flex: 2, backgroundColor: "#000"}}>a</div>
+            <div style={{flex: 2, backgroundColor: "#000"}}>
+              <Title style={{color: "#fff"}} level={1}>
+                Sobre a Hope House
+              </Title>
+            </div>
             <div
               style={{
                 flex: 1,
@@ -132,8 +138,44 @@ export default function Home() {
           </Row>
         </Col>
       </section>
+      <Row
+        style={{
+          justifyContent: "center",
+          width: "100%",
+          height: "150px",
+          alignItems: "center",
+        }}
+      >
+        <Title level={1}>Próximos eventos</Title>
+      </Row>
       <section className="section">
-        <Title level={2}>Próximos eventos</Title>
+        <Col style={{width: "100%", height: "100%"}}>
+          <Row style={{width: "100%", height: "400px"}}>
+            <div
+              style={{
+                flex: 1,
+                backgroundImage: `url('${ballet.src}')`,
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
+                backgroundAttachment: "fixed",
+              }}
+            ></div>
+            <div style={{flex: 1, backgroundColor: "#F1562A"}}></div>
+          </Row>
+          <Row style={{width: "100%", height: "400px"}}>
+            <div style={{flex: 1, backgroundColor: "#F1562A"}}></div>
+            <div
+              style={{
+                flex: 1,
+                backgroundImage: `url('${footbolBoys.src}')`,
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
+                backgroundAttachment: "fixed",
+                backgroundPositionX: "right",
+              }}
+            ></div>
+          </Row>
+        </Col>
       </section>
     </MainComponent>
   );
