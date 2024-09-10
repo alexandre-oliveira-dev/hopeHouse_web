@@ -2,7 +2,7 @@
 import React, {useEffect} from "react";
 import MainComponent from "./components/mainComponent";
 import "./page.css";
-import {Col, notification, Row, Typography} from "antd";
+import {Button, Col, Input, notification, Row, Space, Typography} from "antd";
 import Title from "antd/es/typography/Title";
 import animal from "./assets/animal.png";
 import leao from "./assets/leao.png";
@@ -75,10 +75,36 @@ export default function Home() {
       <section className="section">
         <Col style={{width: "100%", height: "100%"}}>
           <Row style={{width: "100%", height: "300px"}}>
-            <div style={{flex: 2, backgroundColor: "#000"}}>
-              <Title style={{color: "#fff"}} level={1}>
-                Sobre a Hope House
-              </Title>
+            <div
+              style={{
+                flex: 2,
+                backgroundColor: "#000",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Col>
+                <Title style={{color: "#fff"}} level={1}>
+                  Sobre a Hope House
+                </Title>
+
+                <p style={{color: "#fff"}}>
+                  Instituto criativo, que acredita em justiça social
+                </p>
+                <br />
+                <Button
+                  style={{
+                    background: "transparent",
+                    color: "#fff",
+                    width: "150px",
+                    height: "40px",
+                  }}
+                >
+                  Saiba mais
+                </Button>
+              </Col>
             </div>
             <div
               style={{
@@ -122,6 +148,7 @@ export default function Home() {
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center",
+                    backgroundAttachment: "fixed",
                   }}
                 ></div>
               </Row>
@@ -155,12 +182,31 @@ export default function Home() {
               style={{
                 flex: 1,
                 backgroundImage: `url('${ballet.src}')`,
-                backgroundSize: "contain",
+                backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
-                backgroundAttachment: "fixed",
               }}
             ></div>
-            <div style={{flex: 1, backgroundColor: "#F1562A"}}></div>
+            <div
+              style={{
+                flex: 1,
+                backgroundColor: "#F1562A",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Col style={{textAlign: "start"}}>
+                <Title
+                  style={{color: "#fff", fontSize: "60px", width: "45%"}}
+                  level={1}
+                >
+                  COMO VOCÊ PODE AJUDAR
+                </Title>
+                <p style={{color: "#fff", fontSize: "20px", margin: "0px"}}>
+                  Inscreva-se para ficar por dentro de novas notícias!
+                </p>
+              </Col>
+            </div>
           </Row>
           <Row style={{width: "100%", height: "400px"}}>
             <div style={{flex: 1, backgroundColor: "#F1562A"}}></div>
@@ -168,15 +214,59 @@ export default function Home() {
               style={{
                 flex: 1,
                 backgroundImage: `url('${footbolBoys.src}')`,
-                backgroundSize: "contain",
+                backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
-                backgroundAttachment: "fixed",
-                backgroundPositionX: "right",
               }}
             ></div>
           </Row>
         </Col>
       </section>
+      <Row
+        style={{
+          justifyContent: "center",
+          width: "100%",
+          height: "150px",
+          alignItems: "center",
+        }}
+      >
+        <Title level={1}>Últimas notícias</Title>
+      </Row>
+
+      <section className="section">
+        <Col style={{textAlign: "center"}}>
+          <h2>Verifique em breve</h2>
+          <p>
+            Assim que novos posts forem publicados, você poderá vê-los aqui.
+          </p>
+        </Col>
+      </section>
+
+      <section
+        style={{backgroundColor: "#F89825", position: "relative"}}
+        className="section"
+      >
+        <Col style={{textAlign: "center"}}>
+          <Title style={{color: "#fff", fontSize: "50px"}} level={1}>
+            Junte-se ao movimento
+          </Title>
+          <p style={{color: "#fff", fontSize: "20px", margin: "0px"}}>
+            Inscreva-se para ficar por dentro de novas notícias!
+          </p>
+        </Col>
+        <Row
+          style={{
+            position: "absolute",
+            bottom: "-20px",
+          }}
+        >
+          <Space.Compact className="input-subscriber">
+            <Input placeholder="Digite seu E-mail"></Input>
+            <Button>Inscrever-se</Button>
+          </Space.Compact>
+        </Row>
+      </section>
+
+      <section className="section"></section>
     </MainComponent>
   );
 }

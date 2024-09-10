@@ -52,3 +52,30 @@
     color: #121212;
     margin: 0;
 }
+
+.input-subscriber>button {
+
+    height: 50px;
+}
+
+.input-subscriber>input {
+    width: 500px;
+    height: 50px;
+    background-color: #121212;
+    color: #fff;
+    outline: none;
+    border: 0;
+
+    &::placeholder {
+        color: #fff
+    }
+
+    &:focus {
+
+        background-color: #121212;
+    }
+
+    &:hover {
+        background-color: #121212;
+    }
+}
