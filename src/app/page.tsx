@@ -265,8 +265,6 @@ export default function Home() {
           </Space.Compact>
         </Row>
       </section>
-
-      <section className="section"></section>
     </MainComponent>
   );
 }
