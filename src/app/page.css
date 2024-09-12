@@ -79,3 +79,14 @@
         background-color: #121212;
     }
 }
+
+.btn-style {
+    border-radius: 0px;
+}
+
+.btn-style:hover {
+    background-color: #fff !important;
+    color: #121212 !important;
+    border: 0;
+
+}
