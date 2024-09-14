@@ -1,0 +1,25 @@
+.title-donate {
+    font-size: 100px !important;
+    width: 100%;
+    margin-top: 2rem;
+
+    &::before {
+        content: '';
+        background-color: #f1562a;
+        width: 150px;
+        height: 50px;
+        display: block;
+    }
+}
+
+.box-title-donate {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.box-title-donate:nth-child(2) {
+    line-height: 60px;
+}

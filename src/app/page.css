@@ -82,6 +82,11 @@
 
 .btn-style {
     border-radius: 0px;
+    background-color: transparent;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    outline: none;
 }
 
 .btn-style:hover {

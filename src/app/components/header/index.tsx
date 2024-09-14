@@ -15,7 +15,7 @@ export default function Header() {
         </Link>
       </div>
       <nav className="nav-bar">
-        <Link className="nav-btn" href={""}>
+        <Link className="nav-btn" href={"../donate"}>
           Apadrinhe uma criança
         </Link>
         <Link className="nav-btn" href={""}>

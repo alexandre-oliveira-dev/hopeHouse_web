@@ -55,25 +55,25 @@ export default function Home() {
         <div className="box-numbers">
           <Col className="col-box-numbers">
             <div>
-              <Title level={2}>40</Title>
+              <Title level={2}>58</Title>
               <Typography.Text>Famílias ajudadas</Typography.Text>
             </div>
           </Col>
           <Col className="col-box-numbers">
             <div>
-              <Title level={2}>10</Title>
+              <Title level={2}>14</Title>
               <Typography.Text>Voluntários</Typography.Text>
             </div>
           </Col>
           <Col className="col-box-numbers">
             <div>
-              <Title level={2}>140</Title>
+              <Title level={2}>118</Title>
               <Typography.Text>Crianças no programa</Typography.Text>
             </div>
           </Col>
           <Col className="col-box-numbers">
             <div>
-              <Title level={2}>1</Title>
+              <Title level={2}>3</Title>
               <Typography.Text>Comunidade para proteger</Typography.Text>
             </div>
           </Col>
@@ -383,21 +383,100 @@ export default function Home() {
                 alignItems: "center",
               }}
             >
-              <Col style={{textAlign: "start"}}>
+              <Col style={{textAlign: "start", width: "70%"}}>
+                <p
+                  style={{
+                    color: "#fff",
+                    fontSize: "15px",
+                    margin: "0px",
+                    fontWeight: "200",
+                  }}
+                >
+                  Data e horário a serem definidos | local a ser definido
+                </p>
+                <br />
                 <Title
-                  style={{color: "#fff", fontSize: "60px", width: "45%"}}
+                  style={{
+                    color: "#fff",
+                    fontSize: "35px",
+                    width: "auto",
+                    fontWeight: "200 !important",
+                  }}
                   level={1}
                 >
-                  COMO VOCÊ PODE AJUDAR
+                  Audição Hope arts
                 </Title>
-                <p style={{color: "#fff", fontSize: "20px", margin: "0px"}}>
-                  Inscreva-se para ficar por dentro de novas notícias!
+                <br />
+                <p
+                  style={{
+                    color: "#fff",
+                    fontSize: "18px",
+                    margin: "0px",
+                    width: "100%",
+                    letterSpacing: "2px",
+                  }}
+                >
+                  O ballet é uma forma de arte que combina movimento gracioso,
+                  disciplina e expressão artística. Ao praticar ballet, as
+                  crianças e adolescentes aprendem a desenvolver postura,
+                  equilíbrio, flexibilidade e coordenação motora.
                 </p>
+                <br />
+                <Button className="btn-style">Informações</Button>
               </Col>
             </div>
           </Row>
           <Row style={{width: "100%", height: "400px"}}>
-            <div style={{flex: 1, backgroundColor: "#F1562A"}}></div>
+            <div
+              style={{
+                flex: 1,
+                backgroundColor: "#F1562A",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Col style={{textAlign: "start", width: "70%"}}>
+                <p
+                  style={{
+                    color: "#fff",
+                    fontSize: "15px",
+                    margin: "0px",
+                    fontWeight: "200",
+                  }}
+                >
+                  Data e horário a serem definidos | local a ser definido
+                </p>
+                <br />
+                <Title
+                  style={{
+                    color: "#fff",
+                    fontSize: "35px",
+                    width: "auto",
+                    fontWeight: "200 !important",
+                  }}
+                  level={1}
+                >
+                  Peneira Hope Football
+                </Title>
+                <br />
+                <p
+                  style={{
+                    color: "#fff",
+                    fontSize: "18px",
+                    margin: "0px",
+                    width: "100%",
+                    letterSpacing: "2px",
+                  }}
+                >
+                  Em busca de novos talentos no futebol, estamos realizando
+                  peneira para juntar ao nosso time de craque, venha fazer a
+                  peneira !
+                </p>
+                <br />
+                <Button className="btn-style">Informações</Button>
+              </Col>
+            </div>
             <div
               style={{
                 flex: 1,

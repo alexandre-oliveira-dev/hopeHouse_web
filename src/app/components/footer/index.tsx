@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import "./style.css";
-import {Button, Col, Input, Row, Space, Typography} from "antd";
+import {Button, Col, Input, Row, Typography} from "antd";
 import Title from "antd/es/typography/Title";
 import {FaFacebookF, FaTwitter} from "react-icons/fa";
 import {IoLogoInstagram, IoLogoYoutube} from "react-icons/io5";
@@ -23,22 +23,20 @@ export default function Footer() {
           </h2>
           <Input className="input-footer-contact" placeholder="Nome"></Input>
           <Input className="input-footer-contact" placeholder="Email"></Input>
-          <Space.Compact>
-            <Input
-              className="input-footer-contact"
-              placeholder="Telefone"
-            ></Input>
-            <Button
-              style={{
-                borderRadius: '0px !important',
-                outline: "none",
-                marginTop: "20px",
-                height: "40px",
-              }}
-            >
-              Enviar
-            </Button>
-          </Space.Compact>
+          <Input
+            className="input-footer-contact"
+            placeholder="Telefone"
+          ></Input>
+          <Button
+            style={{
+              borderRadius: "0px ",
+              outline: "none",
+              marginTop: "20px",
+              height: "40px",
+            }}
+          >
+            Enviar
+          </Button>
         </Col>
       </div>
       <div style={{flex: 1, display: "grid", placeItems: "center"}}>
@@ -54,7 +52,7 @@ export default function Footer() {
               <Title style={{fontWeight: 200, fontSize: "17px"}}>
                 Endereço
               </Title>
-              <Typography.Text>endereço aqui</Typography.Text>
+              <Typography.Text>Rua Doutor Bernardino Gomes 216</Typography.Text>
             </Col>
             <Col style={{display: "grid", placeItems: "center"}}>
               <Title style={{fontWeight: 200, fontSize: "17px"}}>
