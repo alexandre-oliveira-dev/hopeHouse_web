@@ -5,6 +5,7 @@ import "../page.css";
 import MainComponent from "../components/mainComponent";
 import Title from "antd/es/typography/Title";
 import Paragraph from "antd/es/typography/Paragraph";
+import DonateComponent from "../components/donateComponent";
 
 export default function Donate() {
   return (
@@ -28,6 +29,18 @@ export default function Donate() {
             transforma em esperança, oportunidades e apoio tangível para a
             continuação do trabalho vital realizado por todos nós da Hope House.
           </Paragraph>
+          <Title style={{color: "#F1562A"}}>
+            Um gesto hoje, uma tranformação para sempre
+          </Title>
+          <br />
+          <Title style={{color: "#F1562A"}}>Faça uma doação </Title>
+          <Paragraph>
+            Esta é a descrição da sua campanha. É um ótimo lugar para contar aos
+            visitantes do que se trata a campanha, conectar-se com doadores e
+            chamar atenção para sua causa.
+          </Paragraph>
+          <br />
+          <DonateComponent></DonateComponent>
         </div>
       </section>
     </MainComponent>
