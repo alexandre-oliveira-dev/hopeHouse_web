@@ -2,7 +2,7 @@
 import React, {useEffect} from "react";
 import MainComponent from "./components/mainComponent";
 import "./page.css";
-import {Button, Col, Input, notification, Row, Space, Typography} from "antd";
+import {Button, Col, notification, Row, Typography} from "antd";
 import Title from "antd/es/typography/Title";
 import background from "./assets/image.png";
 import background2 from "./assets/image copy.png";
@@ -10,6 +10,7 @@ import background3 from "./assets/_AR_9469.jpg";
 import ballet from "./assets/ballet.png";
 import footbolBoys from "./assets/footbol-boys.png";
 import {MdWarning} from "react-icons/md";
+import SubscriberComponent from "./components/subscriberComponent";
 
 export default function Home() {
   useEffect(() => {
@@ -508,30 +509,7 @@ export default function Home() {
         </Col>
       </section>
 
-      <section
-        style={{backgroundColor: "#F89825", position: "relative"}}
-        className="section"
-      >
-        <Col style={{textAlign: "center"}}>
-          <Title style={{color: "#fff", fontSize: "50px"}} level={1}>
-            Junte-se ao movimento
-          </Title>
-          <p style={{color: "#fff", fontSize: "20px", margin: "0px"}}>
-            Inscreva-se para ficar por dentro de novas notícias!
-          </p>
-        </Col>
-        <Row
-          style={{
-            position: "absolute",
-            bottom: "-20px",
-          }}
-        >
-          <Space.Compact className="input-subscriber">
-            <Input placeholder="Digite seu E-mail"></Input>
-            <Button>Inscrever-se</Button>
-          </Space.Compact>
-        </Row>
-      </section>
+      <SubscriberComponent></SubscriberComponent>
     </MainComponent>
   );
 }

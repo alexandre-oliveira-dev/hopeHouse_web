@@ -7,6 +7,8 @@ import "./style.css";
 import {Button, Col, Form, Input, Radio, Row, Select} from "antd";
 import Title from "antd/es/typography/Title";
 import Paragraph from "antd/es/typography/Paragraph";
+import SubscriberComponent from "../components/subscriberComponent";
+import "../components/footer/style.css";
 
 export default function BeVolunteer() {
   return (
@@ -107,11 +109,17 @@ export default function BeVolunteer() {
 
           <Row style={{width: "100%"}}>
             <Col flex={2}>
-              <Form.Item label="Nome">
-                <Input></Input>
+              <Form.Item>
+                <Input
+                  placeholder="Nome"
+                  className="input-footer-contact"
+                ></Input>
               </Form.Item>
-              <Form.Item label="E-mail">
-                <Input></Input>
+              <Form.Item>
+                <Input
+                  placeholder="E-mail"
+                  className="input-footer-contact"
+                ></Input>
               </Form.Item>
               <Form.Item label="País">
                 <Select placeholder="Selecione"></Select>
@@ -172,6 +180,7 @@ export default function BeVolunteer() {
           </Button>
         </div>
       </Form>
+      <SubscriberComponent></SubscriberComponent>
     </MainComponent>
   );
 }

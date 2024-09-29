@@ -1,0 +1,11 @@
+.container-menu {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 100000;
+
+}
