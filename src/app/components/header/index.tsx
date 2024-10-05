@@ -5,8 +5,11 @@ import "./style.css";
 import logo from "../../assets/logo.png";
 import Link from "next/link";
 import {FiMenu} from "react-icons/fi";
+import useMenuContext from "@/app/context/menuContext";
 
 export default function Header() {
+  const {setOpen} = useMenuContext();
+
   return (
     <header className="header-component">
       <div className="logo">
@@ -24,7 +27,7 @@ export default function Header() {
         <Link className="nav-btn" href={"../beVolunteer"}>
           Seja Um Voluntario
         </Link>
-        <button className="nav-btn">
+        <button onClick={() => setOpen(true)} className="nav-btn">
           Menu <FiMenu></FiMenu>
         </button>
       </nav>

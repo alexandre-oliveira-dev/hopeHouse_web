@@ -1,6 +1,7 @@
 import type {Metadata} from "next";
 import "./globals.css";
 import logo from ".././app/assets/logoIcon.png";
+import { MenucontextProvider } from "./context/menuContext";
 
 export const metadata: Metadata = {
   title: "Hope house",
@@ -15,7 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body>{children}</body>
+      <MenucontextProvider>
+        <body>{children}</body>
+      </MenucontextProvider>
     </html>
   );
 }

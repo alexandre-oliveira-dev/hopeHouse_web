@@ -21,188 +21,130 @@ export default function Home() {
     });
   }, []);
   return (
-    <MainComponent>
-      <section className="section background-fixed">
-        <div
-          style={{
-            width: "50%",
-            textAlign: "center",
-          }}
-        >
-          <h1
+      <MainComponent>
+        <section className="section background-fixed">
+          <div
             style={{
-              color: "#F89825",
-              margin: "0px",
-              fontSize: "70px",
-              fontWeight: "800",
+              width: "50%",
+              textAlign: "center",
             }}
           >
-            Hope House
-          </h1>
-          <h4
-            style={{
-              margin: "0px",
-              fontWeight: "600",
-              fontSize: "25px",
-              color: "#fff",
-            }}
-          >
-            Acreditamos que através do esporte, educação e arte vamos mudar a
-            realidade de muitas crianças
-          </h4>
-        </div>
-      </section>
-      <section className="section">
-        <div className="box-numbers">
-          <Col className="col-box-numbers">
-            <div>
-              <Title level={2}>58</Title>
-              <Typography.Text>Famílias ajudadas</Typography.Text>
-            </div>
-          </Col>
-          <Col className="col-box-numbers">
-            <div>
-              <Title level={2}>14</Title>
-              <Typography.Text>Voluntários</Typography.Text>
-            </div>
-          </Col>
-          <Col className="col-box-numbers">
-            <div>
-              <Title level={2}>118</Title>
-              <Typography.Text>Crianças no programa</Typography.Text>
-            </div>
-          </Col>
-          <Col className="col-box-numbers">
-            <div>
-              <Title level={2}>3</Title>
-              <Typography.Text>Comunidade para proteger</Typography.Text>
-            </div>
-          </Col>
-        </div>
-      </section>
-      <section className="section">
-        <Col style={{width: "100%", height: "100%"}}>
-          <Row style={{width: "100%", height: "450px"}}>
-            <div
+            <h1
               style={{
-                flex: 2,
-                backgroundColor: "#000",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
+                color: "#F89825",
+                margin: "0px",
+                fontSize: "70px",
+                fontWeight: "800",
               }}
             >
-              <Col style={{width: "50%"}}>
-                <Title style={{color: "#fff", width: "65%"}} level={1}>
-                  Sobre a Hope House
-                </Title>
-
-                <p
-                  style={{
-                    color: "#fff",
-                    fontSize: "15px",
-                    lineHeight: "27px",
-                    fontWeight: 800,
-                  }}
-                >
-                  O Hope tem como objetivo promover a JUSTIÇA SOCIAL e
-                  TRANSFORMAÇÃO DE VIDA para os menos favorecidos através do
-                  amor, compaixão e ações, nas áreas do esporte, educação e
-                  arte.
-                </p>
-                <br />
-                <Button
-                  className="btn-style"
-                  style={{
-                    background: "transparent",
-                    color: "#fff",
-                    width: "150px",
-                    height: "40px",
-                  }}
-                >
-                  Saiba mais
-                </Button>
-              </Col>
-            </div>
-            <div
+              Hope House
+            </h1>
+            <h4
               style={{
-                flex: 1.5,
-                backgroundImage: `url('${background3.src}')`,
-                backgroundSize: "cover",
-              }}
-            ></div>
-            <div
-              style={{
-                flex: 2,
-                backgroundColor: "#7EB7E4",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
+                margin: "0px",
+                fontWeight: "600",
+                fontSize: "25px",
+                color: "#fff",
               }}
             >
-              <Col style={{width: "50%"}}>
-                <Title style={{color: "#fff", width: "65%"}} level={1}>
-                  Projetos
-                </Title>
-
-                <p
-                  style={{
-                    color: "#fff",
-                    fontSize: "15px",
-                    lineHeight: "27px",
-                    fontWeight: 800,
-                  }}
-                >
-                  Hope House atua em diversas áreas como esporte, educação e
-                  arte. Além dos projetos com crianças e adolescentes,
-                  trabalhamos com as famílias dos alunos dos nossos projetos,
-                  compartilhando vivências, ensinando valores, acolhimento,
-                  auxiliando e ajudando as necessidades de cada família.
-                </p>
-                <br />
-                <Button
-                  className="btn-style"
-                  style={{
-                    background: "transparent",
-                    color: "#fff",
-                    width: "150px",
-                    height: "40px",
-                  }}
-                >
-                  Apoie-nos
-                </Button>
-              </Col>
-            </div>
-          </Row>
-          <Row style={{width: "100%", height: "auto", position: "relative"}}>
-            <div
-              style={{
-                flex: 1.14,
-                backgroundImage: `url('${background.src}')`,
-                backgroundSize: "contain",
-                backgroundAttachment: "fixed",
-                backgroundRepeat: "no-repeat",
-                display: "flex",
-                justifyContent: "flex-end",
-                alignItems: "flex-end",
-              }}
-            >
+              Acreditamos que através do esporte, educação e arte vamos mudar a
+              realidade de muitas crianças
+            </h4>
+          </div>
+        </section>
+        <section className="section">
+          <div className="box-numbers">
+            <Col className="col-box-numbers">
+              <div>
+                <Title level={2}>58</Title>
+                <Typography.Text>Famílias ajudadas</Typography.Text>
+              </div>
+            </Col>
+            <Col className="col-box-numbers">
+              <div>
+                <Title level={2}>14</Title>
+                <Typography.Text>Voluntários</Typography.Text>
+              </div>
+            </Col>
+            <Col className="col-box-numbers">
+              <div>
+                <Title level={2}>118</Title>
+                <Typography.Text>Crianças no programa</Typography.Text>
+              </div>
+            </Col>
+            <Col className="col-box-numbers">
+              <div>
+                <Title level={2}>3</Title>
+                <Typography.Text>Comunidade para proteger</Typography.Text>
+              </div>
+            </Col>
+          </div>
+        </section>
+        <section className="section">
+          <Col style={{width: "100%", height: "100%"}}>
+            <Row style={{width: "100%", height: "450px"}}>
               <div
                 style={{
-                  width: "400px",
-                  height: "400px",
-                  backgroundColor: "#F89825",
+                  flex: 2,
+                  backgroundColor: "#000",
                   display: "flex",
+                  flexDirection: "column",
                   justifyContent: "center",
                   alignItems: "center",
-                  padding: 10,
                 }}
               >
-                <Col style={{width: "80%"}}>
-                  <Title style={{color: "#fff", width: "100%"}} level={1}>
-                    Últimas Noticias
+                <Col style={{width: "50%"}}>
+                  <Title style={{color: "#fff", width: "65%"}} level={1}>
+                    Sobre a Hope House
+                  </Title>
+
+                  <p
+                    style={{
+                      color: "#fff",
+                      fontSize: "15px",
+                      lineHeight: "27px",
+                      fontWeight: 800,
+                    }}
+                  >
+                    O Hope tem como objetivo promover a JUSTIÇA SOCIAL e
+                    TRANSFORMAÇÃO DE VIDA para os menos favorecidos através do
+                    amor, compaixão e ações, nas áreas do esporte, educação e
+                    arte.
+                  </p>
+                  <br />
+                  <Button
+                    className="btn-style"
+                    style={{
+                      background: "transparent",
+                      color: "#fff",
+                      width: "150px",
+                      height: "40px",
+                    }}
+                  >
+                    Saiba mais
+                  </Button>
+                </Col>
+              </div>
+              <div
+                style={{
+                  flex: 1.5,
+                  backgroundImage: `url('${background3.src}')`,
+                  backgroundSize: "cover",
+                }}
+              ></div>
+              <div
+                style={{
+                  flex: 2,
+                  backgroundColor: "#7EB7E4",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <Col style={{width: "50%"}}>
+                  <Title style={{color: "#fff", width: "65%"}} level={1}>
+                    Projetos
                   </Title>
 
                   <p
@@ -229,80 +171,38 @@ export default function Home() {
                       height: "40px",
                     }}
                   >
-                    Leia agora
+                    Apoie-nos
                   </Button>
                 </Col>
               </div>
-            </div>
-
-            <Col style={{flex: 2}}>
-              <Row
+            </Row>
+            <Row style={{width: "100%", height: "auto", position: "relative"}}>
+              <div
                 style={{
-                  backgroundColor: "#679C6C",
-                  width: "100%",
-                  alignItems: "center",
-                  padding: "2rem 2rem 2rem 4rem",
+                  flex: 1.14,
+                  backgroundImage: `url('${background.src}')`,
+                  backgroundSize: "contain",
+                  backgroundAttachment: "fixed",
+                  backgroundRepeat: "no-repeat",
                   display: "flex",
-                }}
-              >
-                <Col style={{flex: 1}}>
-                  <Title
-                    style={{
-                      fontSize: "70px",
-                      color: "#fff",
-                      width: "75%",
-                    }}
-                    level={1}
-                  >
-                    COMO VOCÊ PODE AJUDAR
-                  </Title>
-                  <Button
-                    className="btn-style"
-                    style={{
-                      background: "transparent",
-                      color: "#fff",
-                      width: "150px",
-                      height: "40px",
-                    }}
-                  >
-                    Saiba mais
-                  </Button>
-                </Col>
-                <div style={{flex: 1}}>
-                  <ul
-                    style={{
-                      color: "#fff",
-                      fontSize: "20px",
-                      lineHeight: "40px",
-                      fontWeight: "200",
-                    }}
-                  >
-                    <li>Apadrinhamento</li>
-                    <li>Doações</li>
-                    <li>Patrocinando Hope House</li>
-                  </ul>
-                </div>
-              </Row>
-              <Row
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  flexWrap: "nowrap",
+                  justifyContent: "flex-end",
+                  alignItems: "flex-end",
                 }}
               >
                 <div
                   style={{
                     width: "400px",
                     height: "400px",
-                    backgroundColor: "#000",
+                    backgroundColor: "#F89825",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
+                    padding: 10,
                   }}
                 >
                   <Col style={{width: "80%"}}>
                     <Title style={{color: "#fff", width: "100%"}} level={1}>
-                      Conheça-nos
+                      Últimas Noticias
                     </Title>
 
                     <p
@@ -330,186 +230,287 @@ export default function Home() {
                         height: "40px",
                       }}
                     >
-                      Nossa Equipe
+                      Leia agora
                     </Button>
                   </Col>
                 </div>
-                <div
+              </div>
+
+              <Col style={{flex: 2}}>
+                <Row
                   style={{
-                    flex: 1,
-                    height: "400px",
-                    backgroundImage: `url('${background2.src}')`,
-                    backgroundSize: "contain",
-                    backgroundAttachment: "fixed",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "right",
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
+                    backgroundColor: "#679C6C",
+                    width: "100%",
                     alignItems: "center",
-                  }}
-                ></div>
-              </Row>
-            </Col>
-          </Row>
-        </Col>
-      </section>
-      <Row
-        style={{
-          justifyContent: "center",
-          width: "100%",
-          height: "150px",
-          alignItems: "center",
-        }}
-      >
-        <Title level={1}>Próximos eventos</Title>
-      </Row>
-      <section className="section">
-        <Col style={{width: "100%", height: "100%"}}>
-          <Row style={{width: "100%", height: "400px"}}>
-            <div
-              style={{
-                flex: 1,
-                backgroundImage: `url('${ballet.src}')`,
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-              }}
-            ></div>
-            <div
-              style={{
-                flex: 1,
-                backgroundColor: "#F1562A",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <Col style={{textAlign: "start", width: "70%"}}>
-                <p
-                  style={{
-                    color: "#fff",
-                    fontSize: "15px",
-                    margin: "0px",
-                    fontWeight: "200",
+                    padding: "2rem 2rem 2rem 4rem",
+                    display: "flex",
                   }}
                 >
-                  Data e horário a serem definidos | local a ser definido
-                </p>
-                <br />
-                <Title
+                  <Col style={{flex: 1}}>
+                    <Title
+                      style={{
+                        fontSize: "70px",
+                        color: "#fff",
+                        width: "75%",
+                      }}
+                      level={1}
+                    >
+                      COMO VOCÊ PODE AJUDAR
+                    </Title>
+                    <Button
+                      className="btn-style"
+                      style={{
+                        background: "transparent",
+                        color: "#fff",
+                        width: "150px",
+                        height: "40px",
+                      }}
+                    >
+                      Saiba mais
+                    </Button>
+                  </Col>
+                  <div style={{flex: 1}}>
+                    <ul
+                      style={{
+                        color: "#fff",
+                        fontSize: "20px",
+                        lineHeight: "40px",
+                        fontWeight: "200",
+                      }}
+                    >
+                      <li>Apadrinhamento</li>
+                      <li>Doações</li>
+                      <li>Patrocinando Hope House</li>
+                    </ul>
+                  </div>
+                </Row>
+                <Row
                   style={{
-                    color: "#fff",
-                    fontSize: "35px",
-                    width: "auto",
-                    fontWeight: "200 !important",
-                  }}
-                  level={1}
-                >
-                  Audição Hope arts
-                </Title>
-                <br />
-                <p
-                  style={{
-                    color: "#fff",
-                    fontSize: "18px",
-                    margin: "0px",
                     width: "100%",
-                    letterSpacing: "2px",
+                    height: "auto",
+                    flexWrap: "nowrap",
                   }}
                 >
-                  O ballet é uma forma de arte que combina movimento gracioso,
-                  disciplina e expressão artística. Ao praticar ballet, as
-                  crianças e adolescentes aprendem a desenvolver postura,
-                  equilíbrio, flexibilidade e coordenação motora.
-                </p>
-                <br />
-                <Button className="btn-style">Informações</Button>
-              </Col>
-            </div>
-          </Row>
-          <Row style={{width: "100%", height: "400px"}}>
-            <div
-              style={{
-                flex: 1,
-                backgroundColor: "#F1562A",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <Col style={{textAlign: "start", width: "70%"}}>
-                <p
-                  style={{
-                    color: "#fff",
-                    fontSize: "15px",
-                    margin: "0px",
-                    fontWeight: "200",
-                  }}
-                >
-                  Data e horário a serem definidos | local a ser definido
-                </p>
-                <br />
-                <Title
-                  style={{
-                    color: "#fff",
-                    fontSize: "35px",
-                    width: "auto",
-                    fontWeight: "200 !important",
-                  }}
-                  level={1}
-                >
-                  Peneira Hope Football
-                </Title>
-                <br />
-                <p
-                  style={{
-                    color: "#fff",
-                    fontSize: "18px",
-                    margin: "0px",
-                    width: "100%",
-                    letterSpacing: "2px",
-                  }}
-                >
-                  Em busca de novos talentos no futebol, estamos realizando
-                  peneira para juntar ao nosso time de craque, venha fazer a
-                  peneira !
-                </p>
-                <br />
-                <Button className="btn-style">Informações</Button>
-              </Col>
-            </div>
-            <div
-              style={{
-                flex: 1,
-                backgroundImage: `url('${footbolBoys.src}')`,
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-              }}
-            ></div>
-          </Row>
-        </Col>
-      </section>
-      <Row
-        style={{
-          justifyContent: "center",
-          width: "100%",
-          height: "150px",
-          alignItems: "center",
-        }}
-      >
-        <Title level={1}>Últimas notícias</Title>
-      </Row>
+                  <div
+                    style={{
+                      width: "400px",
+                      height: "400px",
+                      backgroundColor: "#000",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                  >
+                    <Col style={{width: "80%"}}>
+                      <Title style={{color: "#fff", width: "100%"}} level={1}>
+                        Conheça-nos
+                      </Title>
 
-      <section className="section">
-        <Col style={{textAlign: "center"}}>
-          <h2>Verifique em breve</h2>
-          <p>
-            Assim que novos posts forem publicados, você poderá vê-los aqui.
-          </p>
-        </Col>
-      </section>
+                      <p
+                        style={{
+                          color: "#fff",
+                          fontSize: "15px",
+                          lineHeight: "27px",
+                          fontWeight: 800,
+                        }}
+                      >
+                        Hope House atua em diversas áreas como esporte, educação
+                        e arte. Além dos projetos com crianças e adolescentes,
+                        trabalhamos com as famílias dos alunos dos nossos
+                        projetos, compartilhando vivências, ensinando valores,
+                        acolhimento, auxiliando e ajudando as necessidades de
+                        cada família.
+                      </p>
+                      <br />
+                      <Button
+                        className="btn-style"
+                        style={{
+                          background: "transparent",
+                          color: "#fff",
+                          width: "150px",
+                          height: "40px",
+                        }}
+                      >
+                        Nossa Equipe
+                      </Button>
+                    </Col>
+                  </div>
+                  <div
+                    style={{
+                      flex: 1,
+                      height: "400px",
+                      backgroundImage: `url('${background2.src}')`,
+                      backgroundSize: "contain",
+                      backgroundAttachment: "fixed",
+                      backgroundRepeat: "no-repeat",
+                      backgroundPosition: "right",
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                  ></div>
+                </Row>
+              </Col>
+            </Row>
+          </Col>
+        </section>
+        <Row
+          style={{
+            justifyContent: "center",
+            width: "100%",
+            height: "150px",
+            alignItems: "center",
+          }}
+        >
+          <Title level={1}>Próximos eventos</Title>
+        </Row>
+        <section className="section">
+          <Col style={{width: "100%", height: "100%"}}>
+            <Row style={{width: "100%", height: "400px"}}>
+              <div
+                style={{
+                  flex: 1,
+                  backgroundImage: `url('${ballet.src}')`,
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                }}
+              ></div>
+              <div
+                style={{
+                  flex: 1,
+                  backgroundColor: "#F1562A",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <Col style={{textAlign: "start", width: "70%"}}>
+                  <p
+                    style={{
+                      color: "#fff",
+                      fontSize: "15px",
+                      margin: "0px",
+                      fontWeight: "200",
+                    }}
+                  >
+                    Data e horário a serem definidos | local a ser definido
+                  </p>
+                  <br />
+                  <Title
+                    style={{
+                      color: "#fff",
+                      fontSize: "35px",
+                      width: "auto",
+                      fontWeight: "200 !important",
+                    }}
+                    level={1}
+                  >
+                    Audição Hope arts
+                  </Title>
+                  <br />
+                  <p
+                    style={{
+                      color: "#fff",
+                      fontSize: "18px",
+                      margin: "0px",
+                      width: "100%",
+                      letterSpacing: "2px",
+                    }}
+                  >
+                    O ballet é uma forma de arte que combina movimento gracioso,
+                    disciplina e expressão artística. Ao praticar ballet, as
+                    crianças e adolescentes aprendem a desenvolver postura,
+                    equilíbrio, flexibilidade e coordenação motora.
+                  </p>
+                  <br />
+                  <Button className="btn-style">Informações</Button>
+                </Col>
+              </div>
+            </Row>
+            <Row style={{width: "100%", height: "400px"}}>
+              <div
+                style={{
+                  flex: 1,
+                  backgroundColor: "#F1562A",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <Col style={{textAlign: "start", width: "70%"}}>
+                  <p
+                    style={{
+                      color: "#fff",
+                      fontSize: "15px",
+                      margin: "0px",
+                      fontWeight: "200",
+                    }}
+                  >
+                    Data e horário a serem definidos | local a ser definido
+                  </p>
+                  <br />
+                  <Title
+                    style={{
+                      color: "#fff",
+                      fontSize: "35px",
+                      width: "auto",
+                      fontWeight: "200 !important",
+                    }}
+                    level={1}
+                  >
+                    Peneira Hope Football
+                  </Title>
+                  <br />
+                  <p
+                    style={{
+                      color: "#fff",
+                      fontSize: "18px",
+                      margin: "0px",
+                      width: "100%",
+                      letterSpacing: "2px",
+                    }}
+                  >
+                    Em busca de novos talentos no futebol, estamos realizando
+                    peneira para juntar ao nosso time de craque, venha fazer a
+                    peneira !
+                  </p>
+                  <br />
+                  <Button className="btn-style">Informações</Button>
+                </Col>
+              </div>
+              <div
+                style={{
+                  flex: 1,
+                  backgroundImage: `url('${footbolBoys.src}')`,
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                }}
+              ></div>
+            </Row>
+          </Col>
+        </section>
+        <Row
+          style={{
+            justifyContent: "center",
+            width: "100%",
+            height: "150px",
+            alignItems: "center",
+          }}
+        >
+          <Title level={1}>Últimas notícias</Title>
+        </Row>
 
-      <SubscriberComponent></SubscriberComponent>
-    </MainComponent>
+        <section className="section">
+          <Col style={{textAlign: "center"}}>
+            <h2>Verifique em breve</h2>
+            <p>
+              Assim que novos posts forem publicados, você poderá vê-los aqui.
+            </p>
+          </Col>
+        </section>
+
+        <SubscriberComponent></SubscriberComponent>
+      </MainComponent>
   );
 }
