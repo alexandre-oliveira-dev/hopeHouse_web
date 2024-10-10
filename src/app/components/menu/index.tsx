@@ -18,7 +18,7 @@ export default function Menu() {
     },
     {
       title: "O que fazemos",
-      href: "",
+      href: "/whatWeDo",
     },
     {
       title: "Quem somos",
@@ -52,7 +52,7 @@ export default function Menu() {
       <Row>
         {btns.map((button, index) => {
           return (
-            <Link href={button.href} key={index}>
+            <Link onClick={() => setOpen(false)} href={button.href} key={index}>
               <Button className="btn-menu">{button.title}</Button>
             </Link>
           );
@@ -62,6 +62,7 @@ export default function Menu() {
         <Link
           style={{flex: 1, height: 55, backgroundColor: "#F1562A"}}
           href={"/donate"}
+          onClick={() => setOpen(false)}
         >
           Adote agora!
         </Link>

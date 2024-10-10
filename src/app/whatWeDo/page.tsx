@@ -1,35 +1,33 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 
-import React from "react";
+import {Col, Row} from "antd";
 import MainComponent from "../components/mainComponent";
-import "./style.css";
-import {Button, Col, Form, Input, Radio, Row, Select} from "antd";
 import Title from "antd/es/typography/Title";
 import Paragraph from "antd/es/typography/Paragraph";
-import SubscriberComponent from "../components/subscriberComponent";
-import "../components/footer/style.css";
+import "./style.css";
+import CardsWhatWeDo from "../components/cardsWhatWeDo";
 
-export default function BeVolunteer() {
+export default function WhatWeDo() {
   return (
     <MainComponent>
-      <section className="bannerBeVolunteer">
-        <Col className="beVolunteerTitle">
+      <section className="bannerWhatWeDo">
+        <Col>
           <Title className="title" level={1}>
-            Seja um voluntário !
+            O que fazemos
           </Title>
-          <Paragraph
+          {/* <Paragraph
             style={{color: "#fff", fontSize: "20px", margin: "0px !important"}}
           >
             Acreditamos que o seus serviços voluntários pode nos ajudar
             bastante.
-          </Paragraph>
+          </Paragraph> */}
         </Col>
       </section>
       <section style={{fontSize: "50px !important"}} className="contentPages">
-        <Title level={1}>PROJETOS</Title>
+        <Title level={1}>PROGRAMAS & PROJETOS</Title>
         <br />
-        <Col style={{width: "50%"}}>
+        <Col style={{width: "55%"}}>
           <Paragraph>
             Um instituto criativo que acredita em justiça social. Clique aqui
             para adicionar seu próprio texto e editar. É fácil. Basta clicar em
@@ -45,10 +43,15 @@ export default function BeVolunteer() {
           </Paragraph>
           <br />
           <br />
-          <Row style={{width: "100%", gap: "4rem"}}>
-            <Col style={{flex: 1}}>
+          <Row
+            style={{
+              width: "100%",
+              justifyContent: "space-between",
+            }}
+          >
+            <Col style={{width: "300px"}}>
               <Title style={{color: "#f1562a"}} level={2}>
-                Hope Family
+                Conservação Comunitária
               </Title>
               <Paragraph>
                 Através do Hope Family desenvolvemos o PROJETO ACOLHIMENTO, com
@@ -64,9 +67,9 @@ export default function BeVolunteer() {
                 grupo a participar da resolução de seus próprios problemas.
               </Paragraph>
             </Col>
-            <Col style={{flex: 1}}>
+            <Col style={{width: "300px"}}>
               <Title style={{color: "#f1562a"}} level={2}>
-                Hope Arts
+                Educação Infantil
               </Title>
               <Paragraph>
                 Atendemos cerca 90 crianças e adolescentes na comunidade Beira
@@ -81,9 +84,60 @@ export default function BeVolunteer() {
                 muitas crianças e adolescentes.
               </Paragraph>
             </Col>
-            <Col style={{flex: 1}}>
+            <Col style={{width: "300px"}}>
               <Title style={{color: "#f1562a"}} level={2}>
-                Hope FootBall
+                Restauração Florestal
+              </Title>
+              <Paragraph>
+                O trabalho de artes desempenha um papel fundamental no
+                desenvolvimento de crianças e adolescentes. Em comunidades no
+                Brasil, onde muitas vezes o acesso a recursos culturais é
+                limitado, a arte pode oferecer uma oportunidade valiosa para que
+                possam explorar sua criatividade, desenvolver habilidades
+                físicas e emocionais, e sonhar com um futuro mais promissor. O
+                ballet é uma forma de arte que combina movimento gracioso,
+                disciplina e expressão artística. Ao praticar ballet, as
+                crianças e adolescentes aprendem a desenvolver postura,
+                equilíbrio, flexibilidade e coordenação motora.
+              </Paragraph>
+            </Col>
+            <Col style={{width: "300px"}}>
+              <Title style={{color: "#f1562a"}} level={2}>
+                Pare o crime contra a vida selvagem
+              </Title>
+              <Paragraph>
+                O trabalho de artes desempenha um papel fundamental no
+                desenvolvimento de crianças e adolescentes. Em comunidades no
+                Brasil, onde muitas vezes o acesso a recursos culturais é
+                limitado, a arte pode oferecer uma oportunidade valiosa para que
+                possam explorar sua criatividade, desenvolver habilidades
+                físicas e emocionais, e sonhar com um futuro mais promissor. O
+                ballet é uma forma de arte que combina movimento gracioso,
+                disciplina e expressão artística. Ao praticar ballet, as
+                crianças e adolescentes aprendem a desenvolver postura,
+                equilíbrio, flexibilidade e coordenação motora.
+              </Paragraph>
+            </Col>
+            <Col style={{width: "300px"}}>
+              <Title style={{color: "#f1562a"}} level={2}>
+                Conservação Marinha
+              </Title>
+              <Paragraph>
+                O trabalho de artes desempenha um papel fundamental no
+                desenvolvimento de crianças e adolescentes. Em comunidades no
+                Brasil, onde muitas vezes o acesso a recursos culturais é
+                limitado, a arte pode oferecer uma oportunidade valiosa para que
+                possam explorar sua criatividade, desenvolver habilidades
+                físicas e emocionais, e sonhar com um futuro mais promissor. O
+                ballet é uma forma de arte que combina movimento gracioso,
+                disciplina e expressão artística. Ao praticar ballet, as
+                crianças e adolescentes aprendem a desenvolver postura,
+                equilíbrio, flexibilidade e coordenação motora.
+              </Paragraph>
+            </Col>
+            <Col style={{width: "300px"}}>
+              <Title style={{color: "#f1562a"}} level={2}>
+                Política Ambiental
               </Title>
               <Paragraph>
                 O trabalho de artes desempenha um papel fundamental no
@@ -100,86 +154,10 @@ export default function BeVolunteer() {
             </Col>
           </Row>
         </Col>
+        <br />
+        <Title level={1}>ONDE TRABALHAMOS</Title>
       </section>
-
-      <Form layout="vertical" className="form-subscriber">
-        <div className="container-form-subscriber">
-          <Title level={1}> Inscrição</Title>
-
-          <Row style={{width: "100%"}}>
-            <Col flex={2}>
-              <Form.Item>
-                <Input
-                  placeholder="Nome"
-                  className="input-footer-contact"
-                ></Input>
-              </Form.Item>
-              <Form.Item>
-                <Input
-                  placeholder="E-mail"
-                  className="input-footer-contact"
-                ></Input>
-              </Form.Item>
-              <Form.Item label="País">
-                <Select placeholder="Selecione"></Select>
-              </Form.Item>
-            </Col>
-            <Col
-              flex={1}
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                paddingLeft: "30px",
-              }}
-            >
-              <label style={{fontSize: "20px"}}>Como você pode ajudar ?</label>
-              <br />
-              <Form.Item>
-                <Radio.Group
-                  size="large"
-                  style={{display: "grid"}}
-                  buttonStyle="outline"
-                >
-                  <Radio
-                    style={{fontSize: "17px"}}
-                    name="howHelping"
-                    value="voluntario"
-                  >
-                    Voluntário
-                  </Radio>
-                  <Radio
-                    style={{fontSize: "17px"}}
-                    name="howHelping"
-                    value="padrinhamento"
-                  >
-                    Apadrinhamento
-                  </Radio>
-                  <Radio
-                    style={{fontSize: "17px"}}
-                    name="howHelping"
-                    value="Patrocinador"
-                  >
-                    Patrocinador
-                  </Radio>
-                </Radio.Group>
-              </Form.Item>
-            </Col>
-          </Row>
-          <br />
-          <Button
-            style={{
-              width: "50%",
-              height: "50px",
-              backgroundColor: "#f1562a",
-              color: "#fff",
-              fontSize: 20,
-            }}
-          >
-            Enviar
-          </Button>
-        </div>
-      </Form>
-      <SubscriberComponent></SubscriberComponent>
+      <CardsWhatWeDo></CardsWhatWeDo>
     </MainComponent>
   );
 }

@@ -1,0 +1,57 @@
+.container-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.row-cards {
+    width: 100%;
+    height: 400px;
+}
+
+.card {
+    flex: 1;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.card-animation {
+    display: none;
+
+}
+
+.card:hover>.card-animation {
+    width: 100%;
+    display: flex;
+    background-color: #F1562A;
+    height: 400px;
+    padding: 2rem;
+    animation: slide 0.5s ease none;
+}
+
+
+.row-card-banner {
+    width: 100%;
+    height: 400px;
+    background-image: url('./assets/elefante.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        width: 50%;
+    }
+
+    100% {
+        opacity: 1;
+        width: 100%;
+    }
+}

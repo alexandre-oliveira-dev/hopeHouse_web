@@ -17,3 +17,26 @@ button {
   border: 0;
   outline: none;
 }
+
+.title {
+  color: #fff !important;
+  font-size: 90px !important;
+  width: 60%;
+  margin: 0px !important;
+
+  &::before {
+    content: '';
+    background-color: #f1562a;
+    width: 150px;
+    height: 30px;
+    display: block;
+  }
+}
+
+.contentPages {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
