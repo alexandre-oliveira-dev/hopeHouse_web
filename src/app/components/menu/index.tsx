@@ -29,8 +29,8 @@ export default function Menu() {
       href: "",
     },
     {
-      title: "Notícias",
-      href: "",
+      title: "Últimas Notícias",
+      href: "/lastNews",
     },
     {
       title: "Mais",

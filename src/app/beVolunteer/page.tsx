@@ -13,7 +13,7 @@ import "../components/footer/style.css";
 export default function BeVolunteer() {
   return (
     <MainComponent>
-      <section className="bannerBeVolunteer">
+      <section className="banner bannerBeVolunteer">
         <Col className="beVolunteerTitle">
           <Title className="title" level={1}>
             Seja um voluntário !

@@ -1,0 +1,11 @@
+.lastNews {
+    background-image: url('../assets/girafa.png');
+}
+
+.news-content {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -11,7 +11,7 @@ import CardsWhatWeDo from "../components/cardsWhatWeDo";
 export default function WhatWeDo() {
   return (
     <MainComponent>
-      <section className="bannerWhatWeDo">
+      <section className="banner bannerWhatWeDo">
         <Col>
           <Title className="title" level={1}>
             O que fazemos

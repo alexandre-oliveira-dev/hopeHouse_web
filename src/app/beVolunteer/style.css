@@ -1,13 +1,5 @@
 .bannerBeVolunteer {
-    width: 100%;
-    height: 550px;
     background-image: url('../assets/banner.png');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: flex;
-    align-items: center;
-    padding-left: 150px;
 }
 
 .beVolunteerTitle {
@@ -15,8 +7,6 @@
     margin: 0px !important;
     height: min-content;
 }
-
-
 
 .form-subscriber {
     display: flex;
