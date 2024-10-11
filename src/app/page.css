@@ -9,18 +9,13 @@
 
 
 .section.background-fixed {
-    background-image: url('./assets/background.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: fixed;
-    background-position: top;
-    position: relative;
+    background-image: url('./assets/background.jpg');
+    background-position: bottom !important;
     margin-top: 80px;
-    z-index: 0;
-    display: grid;
-    place-items: center;
     position: relative;
-
+    height: 400px;
+    z-index: 0;
+    padding: 0px !important;
 }
 
 .box-numbers {

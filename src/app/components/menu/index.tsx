@@ -14,7 +14,7 @@ export default function Menu() {
   const btns = [
     {
       title: "sobre",
-      href: "",
+      href: "/aboutUs",
     },
     {
       title: "O que fazemos",
@@ -31,10 +31,6 @@ export default function Menu() {
     {
       title: "Últimas Notícias",
       href: "/lastNews",
-    },
-    {
-      title: "Mais",
-      href: "",
     },
   ];
 

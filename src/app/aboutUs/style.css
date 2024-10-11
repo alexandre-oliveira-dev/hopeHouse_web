@@ -1,0 +1,25 @@
+.banner-aboutus {
+    background-image: url('./assets/image.png');
+}
+
+.title-aboutus {
+    width: 90% !important;
+
+}
+
+.sponsors-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.container-logo-sponsors {
+    text-align: center;
+}
+
+.logo-parceiros {
+    object-fit: contain;
+    width: 200px;
+}
