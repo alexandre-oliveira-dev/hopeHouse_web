@@ -34,15 +34,54 @@
 .row-card-banner {
     width: 100%;
     height: 400px;
+    padding: 10px;
     background-image: url('./assets/elefante.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: center;
-
-
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.row-card-banner>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-card-banner>div>h1 {
+    color: #fff;
+    font-size: 70px;
+    margin: 0px;
+}
+
+.row-card-banner>div>h4 {
+    color: #fff;
+    font-size: 30px;
+    width: 60%;
+    text-align: center;
+}
+
+.row-card-banner>div>button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    height: 60px;
+    width: 200px;
+    color: #fff;
+    font-size: 17px;
+    padding: 2rem;
+    border-radius: 0px;
+
+    &:hover {
+        background-color: #fff;
+        color: #000 !important;
+        border-color: transparent !important;
+    }
+
+}
 
 @keyframes slide {
     0% {

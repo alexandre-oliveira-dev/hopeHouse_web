@@ -16,12 +16,17 @@ export default function WhatWeDo() {
           <Title className="title" level={1}>
             O que fazemos
           </Title>
-          {/* <Paragraph
-            style={{color: "#fff", fontSize: "20px", margin: "0px !important"}}
+
+          <Paragraph
+            style={{
+              color: "#fff",
+              fontSize: "20px",
+              margin: "0px !important",
+            }}
           >
             Acreditamos que o seus serviços voluntários pode nos ajudar
             bastante.
-          </Paragraph> */}
+          </Paragraph>
         </Col>
       </section>
       <section style={{fontSize: "50px !important"}} className="contentPages">

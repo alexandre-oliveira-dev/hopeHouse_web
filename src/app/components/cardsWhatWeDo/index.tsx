@@ -1,5 +1,5 @@
 "use client";
-import {Row} from "antd";
+import {Button, Col, Row} from "antd";
 import "./style.css";
 import monckei from "./assets/macaco.png";
 import canguru from "./assets/canguru.png";
@@ -7,6 +7,7 @@ import coqueiro from "./assets/coqueiro.png";
 import montanhas from "./assets/montanhas.png";
 import neve from "./assets/neve.png";
 import Title from "antd/es/typography/Title";
+import SubscriberComponent from "../subscriberComponent";
 
 export default function CardsWhatWeDo() {
   const cards = [
@@ -62,7 +63,16 @@ export default function CardsWhatWeDo() {
           );
         })}
       </Row>
-      <Row className="row-card-banner"></Row>
+      <Row className="row-card-banner">
+        <Col>
+          <Title level={1}>AJA AGORA!</Title>
+          <Title level={4}>
+            Protegendo as espécies mais ameaçadas do mundo
+          </Title>
+          <Button>ENTRE EM AÇÃO</Button>
+        </Col>
+      </Row>
+      <SubscriberComponent></SubscriberComponent>
     </div>
   );
 }
