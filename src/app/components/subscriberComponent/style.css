@@ -40,3 +40,42 @@
     border: 0;
 
 }
+
+
+@media(max-width:600px) {
+    .subscriber-section-mobile {
+        padding-bottom: 2rem;
+    }
+
+    .subscriber-col>h1 {
+        font-size: 30px !important;
+    }
+
+    .input-subscriber {
+        width: 100% !important;
+
+    }
+
+    .input-subscriber>input {
+        width: 90% !important;
+        height: 30px !important;
+    }
+
+    .input-subscriber>button {
+        height: 30px !important;
+    }
+
+    .subscriber-section-mobile {
+        display: flex !important;
+        flex-direction: column !important;
+        height: auto !important;
+        gap: 2rem
+    }
+
+    .box-input-subscriber {
+        margin: 0px !important;
+        bottom: 0px !important;
+        position: relative !important;
+    }
+
+}

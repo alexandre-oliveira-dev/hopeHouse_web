@@ -42,6 +42,7 @@ export default function Footer() {
       <div style={{flex: 1, display: "grid", placeItems: "center"}}>
         <Col>
           <Row
+            className="footer-social-mobile"
             style={{
               justifyContent: "space-between",
               width: "100%",

@@ -28,7 +28,7 @@ export default function Header() {
           Seja Um Voluntario
         </Link>
         <button onClick={() => setOpen(true)} className="nav-btn">
-          Menu <FiMenu></FiMenu>
+          <label>Menu</label> <FiMenu></FiMenu>
         </button>
       </nav>
     </header>

@@ -24,6 +24,7 @@ export default function Home() {
     <MainComponent>
       <section className="section background-fixed">
         <div
+          className="filter"
           style={{
             position: "absolute",
             backgroundColor: "#121212",
@@ -34,10 +35,11 @@ export default function Home() {
           }}
         ></div>
         <div
+          className="home-title-box"
           style={{
             width: "50%",
             textAlign: "center",
-            zIndex:100
+            zIndex: 100,
           }}
         >
           <h1
@@ -93,8 +95,12 @@ export default function Home() {
       </section>
       <section className="section">
         <Col style={{width: "100%", height: "100%"}}>
-          <Row style={{width: "100%", height: "450px"}}>
+          <Row
+            className="home-cards-hopehouseinfo"
+            style={{width: "100%", height: "450px"}}
+          >
             <div
+              className="box-home-cards"
               style={{
                 flex: 2,
                 backgroundColor: "#000",
@@ -137,6 +143,7 @@ export default function Home() {
               </Col>
             </div>
             <div
+              className="backImageNone"
               style={{
                 flex: 1.5,
                 backgroundImage: `url('${background3.src}')`,
@@ -189,6 +196,7 @@ export default function Home() {
           </Row>
           <Row style={{width: "100%", height: "auto", position: "relative"}}>
             <div
+              className="backImageNone"
               style={{
                 flex: 1.14,
                 backgroundImage: `url('${background.src}')`,
@@ -201,6 +209,7 @@ export default function Home() {
               }}
             >
               <div
+                className="box-home-cards"
                 style={{
                   width: "400px",
                   height: "400px",
@@ -246,7 +255,7 @@ export default function Home() {
               </div>
             </div>
 
-            <Col style={{flex: 2}}>
+            <Col className="box-how-helping" style={{flex: 2}}>
               <Row
                 style={{
                   backgroundColor: "#679C6C",
@@ -256,7 +265,7 @@ export default function Home() {
                   display: "flex",
                 }}
               >
-                <Col style={{flex: 1}}>
+                <Col className="box-home-cards" style={{flex: 1}}>
                   <Title
                     style={{
                       fontSize: "70px",
@@ -302,6 +311,7 @@ export default function Home() {
                 }}
               >
                 <div
+                  className="box-home-cards"
                   style={{
                     width: "400px",
                     height: "400px",
@@ -346,6 +356,7 @@ export default function Home() {
                   </Col>
                 </div>
                 <div
+                  className="backImageNone"
                   style={{
                     flex: 1,
                     height: "400px",
@@ -373,12 +384,18 @@ export default function Home() {
           alignItems: "center",
         }}
       >
-        <Title level={1}>Próximos eventos</Title>
+        <Title className="nexteventsTitle" level={1}>
+          Próximos eventos
+        </Title>
       </Row>
       <section className="section">
         <Col style={{width: "100%", height: "100%"}}>
-          <Row style={{width: "100%", height: "400px"}}>
+          <Row
+            className="nextenventsBox"
+            style={{width: "100%", height: "400px"}}
+          >
             <div
+              className="nexteventsboximg"
               style={{
                 flex: 1,
                 backgroundImage: `url('${ballet.src}')`,
@@ -438,7 +455,10 @@ export default function Home() {
               </Col>
             </div>
           </Row>
-          <Row style={{width: "100%", height: "400px"}}>
+          <Row
+            className="nextenventsBox"
+            style={{width: "100%", height: "400px"}}
+          >
             <div
               style={{
                 flex: 1,
@@ -490,6 +510,7 @@ export default function Home() {
               </Col>
             </div>
             <div
+              className="nexteventsboximg"
               style={{
                 flex: 1,
                 backgroundImage: `url('${footbolBoys.src}')`,
@@ -508,7 +529,9 @@ export default function Home() {
           alignItems: "center",
         }}
       >
-        <Title level={1}>Últimas notícias</Title>
+        <Title className="nexteventsTitle" level={1}>
+          Últimas notícias
+        </Title>
       </Row>
 
       <section className="section">

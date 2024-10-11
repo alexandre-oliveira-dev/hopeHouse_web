@@ -7,9 +7,9 @@ export default function SubscriberComponent() {
   return (
     <section
       style={{backgroundColor: "#F89825", position: "relative"}}
-      className="section"
+      className="section subscriber-section-mobile"
     >
-      <Col style={{textAlign: "center"}}>
+      <Col className="subscriber-col" style={{textAlign: "center"}}>
         <Title style={{color: "#fff", fontSize: "50px"}} level={1}>
           Junte-se ao movimento
         </Title>
@@ -18,6 +18,7 @@ export default function SubscriberComponent() {
         </p>
       </Col>
       <Row
+        className="box-input-subscriber"
         style={{
           position: "absolute",
           bottom: "-20px",

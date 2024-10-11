@@ -55,3 +55,22 @@
         color: #c4302b;
     }
 }
+
+
+@media(max-width:600px) {
+    .footer-component {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem;
+
+    }
+
+    .footer-component>div>div {
+        width: 100% !important;
+        margin-bottom: 3rem;
+    }
+
+    .footer-social-mobile {
+        flex-direction: column !important;
+    }
+}

@@ -95,3 +95,118 @@
     border: 0;
 
 }
+
+
+@media(max-width:600px) {
+    .home-title-box {
+        width: 100% !important;
+    }
+
+    .home-title-box>h1 {
+        font-size: 40px !important;
+    }
+
+    .home-title-box>h4 {
+        font-size: 15px !important;
+        width: 100% !important;
+        color: #121212 !important;
+    }
+
+    .section.background-fixed {
+        background-image: none;
+        padding: 20px;
+    }
+
+    .filter {
+        display: none;
+    }
+
+    .col-box-numbers {
+        flex: none;
+    }
+
+    .col-box-numbers>div {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-box-numbers>div>h2 {
+        font-size: 50px !important;
+    }
+
+    .box-numbers {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 2rem;
+    }
+
+    .backImageNone {
+        display: none;
+    }
+
+    .home-cards-hopehouseinfo {
+        flex-direction: column;
+        width: 100% !important;
+    }
+
+    .box-home-cards {
+        flex: none !important;
+        width: 100% !important;
+        height: 100% !important;
+        padding: 3rem !important;
+
+    }
+
+    .box-home-cards>div {
+        width: 100% !important;
+    }
+
+
+    .home-cards-hopehouseinfo>div>div {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .home-cards-hopehouseinfo>div>div>h1 {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .box-how-helping>div {
+        flex-direction: column !important;
+    }
+
+    .box-how-helping>div>div>h1 {
+        width: 100% !important;
+        font-size: 30px !important;
+    }
+
+    .nexteventsTitle {
+        font-size: 30px !important;
+    }
+
+    .nextenventsBox {
+        flex-direction: column;
+        height: auto !important;
+    }
+
+    .nexteventsboximg {
+        width: 100% !important;
+        flex: none !important;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .nextenventsBox>div>div {
+        height: auto !important;
+        flex: none !important;
+        width: 100% !important;
+        padding: 2rem;
+    }
+}
