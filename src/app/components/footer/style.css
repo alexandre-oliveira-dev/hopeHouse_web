@@ -73,4 +73,9 @@
     .footer-social-mobile {
         flex-direction: column !important;
     }
+
+    .socialsIcons {
+        width: 100% !important;
+        padding: 2rem;
+    }
 }

@@ -49,7 +49,7 @@ export default function Menu() {
       <Row>
         <img className="logo-menu" src={logo.src} alt="logo"></img>
       </Row>
-      <Row>
+      <Row className="btns-menu-mobile">
         {btns.map((button, index) => {
           return (
             <Link onClick={() => setOpen(false)} href={button.href} key={index}>
