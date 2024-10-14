@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import React, {useEffect} from "react";
 import MainComponent from "./components/mainComponent";
@@ -11,6 +12,7 @@ import ballet from "./assets/ballet.png";
 import footbolBoys from "./assets/footbol-boys.png";
 import {MdWarning} from "react-icons/md";
 import SubscriberComponent from "./components/subscriberComponent";
+import logo from "./assets/logo.png";
 
 export default function Home() {
   useEffect(() => {
@@ -42,6 +44,7 @@ export default function Home() {
             zIndex: 100,
           }}
         >
+          <img style={{width: "200px"}} src={logo.src} alt="logo" />
           <h1
             style={{
               color: "#F89825",
