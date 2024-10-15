@@ -7,11 +7,15 @@ import {Col} from "antd";
 import Title from "antd/es/typography/Title";
 import Paragraph from "antd/es/typography/Paragraph";
 import SubscriberComponent from "../components/subscriberComponent";
+import {girafa} from "../banners";
 
 export default function LastNews() {
   return (
     <MainComponent>
-      <section className="banner lastNews">
+      <section
+        style={{backgroundImage: `url(${girafa})`}}
+        className="banner lastNews"
+      >
         <div
           style={{
             position: "absolute",

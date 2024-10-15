@@ -7,11 +7,15 @@ import Title from "antd/es/typography/Title";
 import Paragraph from "antd/es/typography/Paragraph";
 import "./style.css";
 import CardsWhatWeDo from "../components/cardsWhatWeDo";
+import {africaBanner} from "../banners";
 
 export default function WhatWeDo() {
   return (
     <MainComponent>
-      <section className="banner bannerWhatWeDo">
+      <section
+        style={{backgroundImage:`url(${africaBanner})`}}
+        className="banner"
+      >
         <Col>
           <Title className="title" level={1}>
             O que fazemos
