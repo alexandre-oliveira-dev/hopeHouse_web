@@ -7,7 +7,6 @@ const key = "hope-house-private-dev";
 
 const storage = new Storage({
   projectId: "quiet-chalice-432517-m7",
-  keyFilename: 'src/scripts/quiet-chalice-432517-m7-8974796825b8.json',
   credentials: {
     type: process.env.NEXT_PUBLIC_TYPE,
     projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
