@@ -6,12 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-<<<<<<< HEAD
     "lint": "next lint",
     "generateUrls": "node src/scripts/generateUrlImgs.js >src/app/banners.ts"
-=======
-    "lint": "next lint"
->>>>>>> parent of 4fab0e2 (checkpoint)
   },
   "dependencies": {
     "antd": "^5.20.5",
