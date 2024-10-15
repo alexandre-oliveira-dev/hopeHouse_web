@@ -6,11 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+<<<<<<< HEAD
     "lint": "next lint",
     "generateUrls": "node src/scripts/generateUrlImgs.js >src/app/banners.ts"
+=======
+    "lint": "next lint"
+>>>>>>> parent of 4fab0e2 (checkpoint)
   },
   "dependencies": {
-    "@google-cloud/storage": "^7.13.0",
     "antd": "^5.20.5",
     "dotenv": "^16.4.5",
     "install": "^0.13.0",
