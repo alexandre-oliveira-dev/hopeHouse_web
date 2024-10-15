@@ -4,10 +4,8 @@ require('dotenv').config({ path: '.env.local' });
 const { Storage } = require("@google-cloud/storage");
 const key = "hope-house-private-dev";
 
-
 const storage = new Storage({
-  projectId: "quiet-chalice-432517-m7",
-  credentials: {
+  credentials:{
     type: process.env.NEXT_PUBLIC_TYPE,
     projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
     private_key_id: process.env.NEXT_PUBLIC_PRIVATE_KEY_ID,
