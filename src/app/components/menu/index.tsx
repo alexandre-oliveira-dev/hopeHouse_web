@@ -22,7 +22,7 @@ export default function Menu() {
     },
     {
       title: "Quem somos",
-      href: "",
+      href: "/whoWheAre",
     },
     {
       title: "Eventos",

@@ -23,3 +23,17 @@
     object-fit: contain;
     width: 200px;
 }
+
+@media(max-width :600px) {
+    .title-aboutus {
+        width: 100%;
+    }
+
+    .container-logo-sponsors>h1 {
+        font-size: 30px !important;
+    }
+
+    .logo-parceiros {
+        width: 100px;
+    }
+}

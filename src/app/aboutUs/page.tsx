@@ -9,12 +9,14 @@ import Title from "antd/es/typography/Title";
 import logo1 from "./assets/weagle.png";
 import logo2 from "./assets/tecwebcod.png";
 import logo3 from "./assets/relevans.png";
+import FilterForBanners from "../components/filterForBanners/filterForBanners.component";
 
 export default function AboutUs() {
   return (
     <MainComponent>
       <section className="banner banner-aboutus">
-        <Col>
+        <FilterForBanners></FilterForBanners>
+        <Col style={{width: "100%"}} className="title-container">
           <Title className="title title-aboutus" level={1}>
             SOBRE HOPE HOUSE
           </Title>

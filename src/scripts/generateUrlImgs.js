@@ -21,6 +21,7 @@ async function getFilesUrl() {
     const [files] = await storage.bucket(key).getFiles();
 
     files.forEach(file => {
+
       const publicUrl = `https://storage.googleapis.com/${key}/${file.name}`;
       console.log(`export const ${file?.name?.split('assets/')[1].split('.')[0].replace(/[\s-]/g, '') || 'bucket'} = "${publicUrl}"`);
     });

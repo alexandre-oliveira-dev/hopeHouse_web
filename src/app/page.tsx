@@ -13,6 +13,8 @@ import footbolBoys from "./assets/footbol-boys.png";
 import {MdWarning} from "react-icons/md";
 import SubscriberComponent from "./components/subscriberComponent";
 import logo from "./assets/logo.png";
+import FilterForBanners from "./components/filterForBanners/filterForBanners.component";
+import Link from "next/link";
 
 export default function Home() {
   useEffect(() => {
@@ -24,24 +26,14 @@ export default function Home() {
   }, []);
   return (
     <MainComponent>
-      <section className="section background-fixed banner">
-        <div
-          className="filter"
-          style={{
-            position: "absolute",
-            backgroundColor: "#121212",
-            opacity: "0.5",
-            width: "100%",
-            height: "100%",
-            left: "0px",
-          }}
-        ></div>
+      <section className="backgroundHome banner">
+        <FilterForBanners></FilterForBanners>
         <div
           className="home-title-box"
           style={{
             width: "50%",
             textAlign: "center",
-            zIndex: 100,
+            zIndex: 1,
           }}
         >
           <img style={{width: "200px"}} src={logo.src} alt="logo" />
@@ -132,16 +124,17 @@ export default function Home() {
                   arte.
                 </p>
                 <br />
-                <Button
-                  className="btn-style"
-                  style={{
-                    background: "transparent",
-                    color: "#fff",
-                    width: "150px",
-                    height: "40px",
-                  }}
-                >
-                  Saiba mais
+                <Button className="btn-style">
+                  {" "}
+                  <Link
+                    href={"/whoWheAre"}
+                    style={{
+                      textDecoration: "none",
+                      outline: "none",
+                    }}
+                  >
+                    Saiba mais
+                  </Link>
                 </Button>
               </Col>
             </div>
@@ -243,16 +236,17 @@ export default function Home() {
                     auxiliando e ajudando as necessidades de cada família.
                   </p>
                   <br />
-                  <Button
-                    className="btn-style"
-                    style={{
-                      background: "transparent",
-                      color: "#fff",
-                      width: "150px",
-                      height: "40px",
-                    }}
-                  >
-                    Leia agora
+                  <Button className="btn-style">
+                    {" "}
+                    <Link
+                      href={"/lastNews"}
+                      style={{
+                        textDecoration: "none",
+                        outline: "none",
+                      }}
+                    >
+                      Leia Agora
+                    </Link>
                   </Button>
                 </Col>
               </div>
@@ -279,16 +273,17 @@ export default function Home() {
                   >
                     COMO VOCÊ PODE AJUDAR
                   </Title>
-                  <Button
-                    className="btn-style"
-                    style={{
-                      background: "transparent",
-                      color: "#fff",
-                      width: "150px",
-                      height: "40px",
-                    }}
-                  >
-                    Saiba mais
+                  <Button className="btn-style">
+                    {" "}
+                    <Link
+                      href={"/whatWeDo"}
+                      style={{
+                        textDecoration: "none",
+                        outline: "none",
+                      }}
+                    >
+                      Saiba mais
+                    </Link>
                   </Button>
                 </Col>
                 <div style={{flex: 1}}>
@@ -345,16 +340,17 @@ export default function Home() {
                       família.
                     </p>
                     <br />
-                    <Button
-                      className="btn-style"
-                      style={{
-                        background: "transparent",
-                        color: "#fff",
-                        width: "150px",
-                        height: "40px",
-                      }}
-                    >
-                      Nossa Equipe
+                    <Button className="btn-style">
+                      {" "}
+                      <Link
+                        href={"/whoWheAre"}
+                        style={{
+                          textDecoration: "none",
+                          outline: "none",
+                        }}
+                      >
+                        Nossa Equipe
+                      </Link>
                     </Button>
                   </Col>
                 </div>

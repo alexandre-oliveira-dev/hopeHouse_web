@@ -18,13 +18,13 @@ export default function Header() {
         </Link>
       </div>
       <nav className="nav-bar">
-        <Link className="nav-btn" href={"../donate"}>
-          Apadrinhe uma criança
+        <Link className="nav-btn" href={"/whatWeDo"}>
+          Sobre nós
         </Link>
-        <Link className="nav-btn" href={""}>
+        <Link className="nav-btn" href={"/donate"}>
           Doe Agora
         </Link>
-        <Link className="nav-btn" href={"../beVolunteer"}>
+        <Link className="nav-btn" href={"/beVolunteer"}>
           Seja Um Voluntario
         </Link>
         <button onClick={() => setOpen(true)} className="nav-btn">
