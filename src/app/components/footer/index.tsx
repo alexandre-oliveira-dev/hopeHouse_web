@@ -3,8 +3,7 @@ import React from "react";
 import "./style.css";
 import {Button, Col, Input, Row, Typography} from "antd";
 import Title from "antd/es/typography/Title";
-import {FaFacebookF, FaTwitter} from "react-icons/fa";
-import {IoLogoInstagram, IoLogoYoutube} from "react-icons/io5";
+import SocialIcons from "../socialIcons";
 
 export default function Footer() {
   return (
@@ -68,30 +67,7 @@ export default function Footer() {
           </Row>
           <br />
           <br />
-          <Row
-            className="socialsIcons"
-            style={{justifyContent: "space-around", width: "100%", gap: "20px"}}
-          >
-            <div className="boxsocialsIcons">
-              <FaFacebookF size={25} />
-              <p style={{margin: "0px"}}>Facebook</p>
-            </div>
-            <div className="boxsocialsIcons">
-              {" "}
-              <FaTwitter size={25} />
-              <p style={{margin: "0px"}}>Twitter</p>
-            </div>
-            <div className="boxsocialsIcons">
-              {" "}
-              <IoLogoInstagram size={25} />
-              <p style={{margin: "0px"}}> Instagram</p>
-            </div>
-            <div className="boxsocialsIcons">
-              {" "}
-              <IoLogoYoutube size={25} />
-              <p style={{margin: "0px"}}>Youtube</p>
-            </div>
-          </Row>
+          <SocialIcons></SocialIcons>
         </Col>
       </div>
     </footer>

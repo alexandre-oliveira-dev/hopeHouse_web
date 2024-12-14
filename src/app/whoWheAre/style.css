@@ -2,3 +2,33 @@
 
     background-image: url('../assets/whowheareBanner.png');
 }
+
+
+@media(max-width:600px) {
+    .col-box-title-whoweare>h1 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .col-box-title-whoweare>div {
+        width: 100% !important;
+        text-align: center;
+        font-size: 15px !important;
+    }
+
+    .members {
+        flex-direction: column;
+        width: 100%;
+        align-items: center !important;
+
+    }
+
+    .members>div {
+        width: 100%;
+
+    }
+
+    .members>div>h1 {
+        width: 100% !important;
+    }
+}

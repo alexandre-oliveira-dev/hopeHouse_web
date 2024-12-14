@@ -1,7 +1,7 @@
 import {Row} from "antd";
-import {FaFacebookF, FaTwitter} from "react-icons/fa";
-import {IoLogoInstagram, IoLogoYoutube} from "react-icons/io5";
+import {IoLogoInstagram} from "react-icons/io5";
 import "../footer/style.css";
+import Link from "next/link";
 
 export default function SocialIcons() {
   return (
@@ -10,23 +10,15 @@ export default function SocialIcons() {
       style={{width: "35%", justifyContent: "space-between"}}
     >
       <div className="boxsocialsIcons">
-        <FaFacebookF size={25} />
-        <p style={{margin: "0px"}}>Facebook</p>
-      </div>
-      <div className="boxsocialsIcons">
-        {" "}
-        <FaTwitter size={25} />
-        <p style={{margin: "0px"}}>Twitter</p>
-      </div>
-      <div className="boxsocialsIcons">
-        {" "}
-        <IoLogoInstagram size={25} />
+        <Link
+          target="_blank"
+          href={
+            "https://www.instagram.com/hopehouse.sp?igsh=MTV1NDJvN3hybzkwaQ=="
+          }
+        >
+          <IoLogoInstagram size={25} />
+        </Link>
         <p style={{margin: "0px"}}> Instagram</p>
-      </div>
-      <div className="boxsocialsIcons">
-        {" "}
-        <IoLogoYoutube size={25} />
-        <p style={{margin: "0px"}}>Youtube</p>
       </div>
     </Row>
   );

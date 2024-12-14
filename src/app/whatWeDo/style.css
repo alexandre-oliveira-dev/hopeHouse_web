@@ -1,4 +1,25 @@
 .bannerWhatWeDo {
 
-    background-image: url('../assets/africaBanner.png');
+    background-image: url('../assets/backwhatwedo.avif');
+}
+
+@media(max-width:600px) {
+    .col-title {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .col-programsprojects {
+        width: 100% !important;
+        margin-top: 1rem;
+    }
+
+    .col-programsprojects>h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .col-programsprojects>div{
+        text-align: center;
+    }
 }

@@ -73,7 +73,7 @@ export default function WhatWeDo() {
       <section className="banner bannerWhowheare">
         <FilterForBanners></FilterForBanners>
 
-        <Col span={15}>
+        <Col className="col-box-title-whoweare">
           <Title className="title" level={1}>
             QUEM NÓS SOMOS
           </Title>
@@ -99,10 +99,10 @@ export default function WhatWeDo() {
       >
         <Title level={1}>MEMBROS DA EQUIPE</Title>
         <br />
-        <Row gutter={[16, 16]}>
+        <Row className="members" gutter={[16, 16]}>
           {members.map((item, index) => {
             return (
-              <Col span={8} key={index}>
+              <Col key={index}>
                 <h1 style={{fontSize: 30, color: "#f1562a"}}>{item.name}</h1>
                 <br />
                 <p style={{fontSize: 18}}>{item.position}</p>

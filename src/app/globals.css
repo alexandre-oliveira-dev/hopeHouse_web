@@ -75,9 +75,6 @@ button {
     width: 100% !important;
     font-size: 45px !important;
 
-    &::before {
-      display: none;
-    }
 
   }
 
@@ -94,11 +91,14 @@ button {
 
   .contentPages>h1 {
     font-size: 30px !important;
+    text-align: center;
   }
 
   .contentPages>div {
     width: 100% !important;
     padding: 10px;
   }
+
+
 
 }

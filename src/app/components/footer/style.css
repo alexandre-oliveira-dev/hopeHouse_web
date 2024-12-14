@@ -77,5 +77,6 @@
     .socialsIcons {
         width: 100% !important;
         padding: 2rem;
+        justify-content: center !important; 
     }
 }

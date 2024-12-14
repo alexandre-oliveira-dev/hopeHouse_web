@@ -7,45 +7,34 @@ import Title from "antd/es/typography/Title";
 import Paragraph from "antd/es/typography/Paragraph";
 import "./style.css";
 import CardsWhatWeDo from "../components/cardsWhatWeDo";
+import FilterForBanners from "../components/filterForBanners/filterForBanners.component";
 
 export default function WhatWeDo() {
   return (
     <MainComponent>
       <section className="banner bannerWhatWeDo">
-        <Col>
+        <FilterForBanners></FilterForBanners>
+        <Col className="col-title">
           <Title className="title" level={1}>
             O que fazemos
           </Title>
-
-          <Paragraph
-            style={{
-              color: "#fff",
-              fontSize: "20px",
-              margin: "0px !important",
-            }}
-          >
-            Acreditamos que o seus serviços voluntários pode nos ajudar
-            bastante.
-          </Paragraph>
         </Col>
       </section>
       <section style={{fontSize: "50px !important"}} className="contentPages">
         <Title level={1}>PROGRAMAS & PROJETOS</Title>
         <br />
-        <Col style={{width: "55%"}}>
+        <Col className="col-programsprojects" style={{width: "55%"}}>
           <Paragraph>
-            Um instituto criativo que acredita em justiça social. Clique aqui
-            para adicionar seu próprio texto e editar. É fácil. Basta clicar em
-            "Editar texto" ou clicar duas vezes em mim para adicionar seu
-            próprio conteúdo e fazer alterações na fonte. Sinta-se à vontade
-            para arrastar e soltar-me onde quiser na sua página.
+            Nossos projetos têm como foco promover impacto positivo e
+            transformação social. Atuamos em diversas frentes, oferecendo apoio
+            às comunidades mais vulneráveis por meio de iniciativas como
+            distribuição de alimentos, mutirões de limpeza, ações educativas e
+            atividades com jovens. Trabalhamos lado a lado com voluntários e
+            parceiros, acreditando que juntos podemos construir um futuro mais
+            justo, solidário e sustentável. Saiba mais sobre nossas ações e como
+            você pode fazer parte dessa mudança!
           </Paragraph>
-          <Paragraph>
-            Este é um ótimo espaço para escrever um longo texto sobre a sua
-            organização e os serviços que oferece. Você pode usar este espaço
-            para detalhar um pouco mais sobre a sua organização. Fale sobre a
-            sua equipe e quais serviços você oferece.
-          </Paragraph>
+
           <br />
           <br />
           <Row
@@ -54,7 +43,7 @@ export default function WhatWeDo() {
               justifyContent: "space-between",
             }}
           >
-            <Col style={{width: "300px"}}>
+            <Col className="col-programsprojects" style={{width: "300px"}}>
               <Title style={{color: "#f1562a"}} level={2}>
                 Conservação Comunitária
               </Title>
@@ -72,7 +61,7 @@ export default function WhatWeDo() {
                 grupo a participar da resolução de seus próprios problemas.
               </Paragraph>
             </Col>
-            <Col style={{width: "300px"}}>
+            <Col className="col-programsprojects" style={{width: "300px"}}>
               <Title style={{color: "#f1562a"}} level={2}>
                 Educação Infantil
               </Title>
@@ -89,7 +78,7 @@ export default function WhatWeDo() {
                 muitas crianças e adolescentes.
               </Paragraph>
             </Col>
-            <Col style={{width: "300px"}}>
+            <Col className="col-programsprojects" style={{width: "300px"}}>
               <Title style={{color: "#f1562a"}} level={2}>
                 Restauração Florestal
               </Title>
@@ -106,7 +95,7 @@ export default function WhatWeDo() {
                 equilíbrio, flexibilidade e coordenação motora.
               </Paragraph>
             </Col>
-            <Col style={{width: "300px"}}>
+            <Col className="col-programsprojects" style={{width: "300px"}}>
               <Title style={{color: "#f1562a"}} level={2}>
                 Pare o crime contra a vida selvagem
               </Title>
@@ -123,7 +112,7 @@ export default function WhatWeDo() {
                 equilíbrio, flexibilidade e coordenação motora.
               </Paragraph>
             </Col>
-            <Col style={{width: "300px"}}>
+            <Col className="col-programsprojects" style={{width: "300px"}}>
               <Title style={{color: "#f1562a"}} level={2}>
                 Conservação Marinha
               </Title>
@@ -140,7 +129,7 @@ export default function WhatWeDo() {
                 equilíbrio, flexibilidade e coordenação motora.
               </Paragraph>
             </Col>
-            <Col style={{width: "300px"}}>
+            <Col className="col-programsprojects" style={{width: "300px"}}>
               <Title style={{color: "#f1562a"}} level={2}>
                 Política Ambiental
               </Title>
@@ -160,8 +149,11 @@ export default function WhatWeDo() {
           </Row>
         </Col>
         <br />
+        <br />
         <Title level={1}>ONDE TRABALHAMOS</Title>
       </section>
+      <br />
+      <br />
       <CardsWhatWeDo></CardsWhatWeDo>
     </MainComponent>
   );

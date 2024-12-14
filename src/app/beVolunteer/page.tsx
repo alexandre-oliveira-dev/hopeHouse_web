@@ -9,11 +9,14 @@ import Title from "antd/es/typography/Title";
 import Paragraph from "antd/es/typography/Paragraph";
 import SubscriberComponent from "../components/subscriberComponent";
 import "../components/footer/style.css";
+import FilterForBanners from "../components/filterForBanners/filterForBanners.component";
 
 export default function BeVolunteer() {
   return (
     <MainComponent>
       <section className="banner bannerBeVolunteer">
+        <FilterForBanners></FilterForBanners>
+
         <Col className="beVolunteerTitle">
           <Title className="title" level={1}>
             Seja um voluntário !
@@ -31,18 +34,16 @@ export default function BeVolunteer() {
         <br />
         <Col style={{width: "50%"}}>
           <Paragraph>
-            Um instituto criativo que acredita em justiça social. Clique aqui
-            para adicionar seu próprio texto e editar. É fácil. Basta clicar em
-            "Editar texto" ou clicar duas vezes em mim para adicionar seu
-            próprio conteúdo e fazer alterações na fonte. Sinta-se à vontade
-            para arrastar e soltar-me onde quiser na sua página.
+            Nossos projetos têm como foco promover impacto positivo e
+            transformação social. Atuamos em diversas frentes, oferecendo apoio
+            às comunidades mais vulneráveis por meio de iniciativas como
+            distribuição de alimentos, mutirões de limpeza, ações educativas e
+            atividades com jovens. Trabalhamos lado a lado com voluntários e
+            parceiros, acreditando que juntos podemos construir um futuro mais
+            justo, solidário e sustentável. Saiba mais sobre nossas ações e como
+            você pode fazer parte dessa mudança!
           </Paragraph>
-          <Paragraph>
-            Este é um ótimo espaço para escrever um longo texto sobre a sua
-            organização e os serviços que oferece. Você pode usar este espaço
-            para detalhar um pouco mais sobre a sua organização. Fale sobre a
-            sua equipe e quais serviços você oferece.
-          </Paragraph>
+
           <br />
           <br />
           <Row style={{width: "100%", gap: "4rem"}}>
