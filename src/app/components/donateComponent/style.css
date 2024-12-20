@@ -1,7 +1,34 @@
-.radioButton{
+.radioButton {
     width: 150px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.button-donate-value {
+    height: 40px;
+    font-size: 15px;
+    background-color: #F1564B;
+    color: #fff;
+}
+
+@media(max-width:600px) {
+    .container-values-donate {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .radio-group-value-donate {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px
+    }
+
+    .radioButton {
+        width: 100%;
+        font-size: 20px;
+    }
+
+
 }

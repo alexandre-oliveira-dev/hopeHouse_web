@@ -68,14 +68,15 @@ button {
   .banner {
     height: 100vh;
     padding-left: 0px !important;
-    padding: 10px;
   }
 
   .title {
     width: 100% !important;
     font-size: 45px !important;
 
-
+    &::before {
+      margin-bottom: 1rem;
+    }
   }
 
   .title>p {

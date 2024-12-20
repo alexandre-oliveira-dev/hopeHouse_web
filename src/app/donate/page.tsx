@@ -6,15 +6,22 @@ import MainComponent from "../components/mainComponent";
 import Title from "antd/es/typography/Title";
 import Paragraph from "antd/es/typography/Paragraph";
 import DonateComponent from "../components/donateComponent";
+import FilterForBanners from "../components/filterForBanners/filterForBanners.component";
+import {Col} from "antd";
 
 export default function Donate() {
   return (
     <MainComponent>
-      <section className="section" style={{marginTop: "80px"}}>
-        <div className="box-title-donate">
-          <Title className="title-donate" level={1}>
+      <section className="banner donateBanner">
+        <FilterForBanners></FilterForBanners>
+        <Col className="beVolunteerTitle">
+          <Title className="title" level={1}>
             Apadrinhe o Hope
           </Title>
+        </Col>
+      </section>
+      <section className="section" style={{marginTop: "80px"}}>
+        <div className="box-title-donate">
           <Paragraph>
             Em um canto especial da cidade de São Paulo, existe uma comunidade
             vibrante, porém desafiada pela vulnerabilidade. Nesse lugar,
@@ -29,17 +36,11 @@ export default function Donate() {
             transforma em esperança, oportunidades e apoio tangível para a
             continuação do trabalho vital realizado por todos nós da Hope House.
           </Paragraph>
-          <Title style={{color: "#F1562A"}}>
+          <Title level={1} style={{color: "#F1562A"}}>
             Um gesto hoje, uma tranformação para sempre
           </Title>
-          <br />
-          <Title style={{color: "#F1562A"}}>Faça uma doação </Title>
-          <Paragraph>
-            Esta é a descrição da sua campanha. É um ótimo lugar para contar aos
-            visitantes do que se trata a campanha, conectar-se com doadores e
-            chamar atenção para sua causa.
-          </Paragraph>
-          <br />
+          <Title style={{color: "#F1562A"}}>Faça uma doação</Title>
+
           <DonateComponent></DonateComponent>
         </div>
       </section>

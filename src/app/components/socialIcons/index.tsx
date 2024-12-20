@@ -11,6 +11,7 @@ export default function SocialIcons() {
     >
       <div className="boxsocialsIcons">
         <Link
+          style={{color: "#121212"}}
           target="_blank"
           href={
             "https://www.instagram.com/hopehouse.sp?igsh=MTV1NDJvN3hybzkwaQ=="

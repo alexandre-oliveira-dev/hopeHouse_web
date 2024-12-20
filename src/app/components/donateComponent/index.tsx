@@ -1,25 +1,25 @@
 "use client";
-import {Button, Col, Form, Radio, Row} from "antd";
+import {Button, Col, Radio, Row} from "antd";
 import React, {useState} from "react";
 import "./style.css";
-import Title from "antd/es/typography/Title";
-import {useForm} from "antd/es/form/Form";
+// import {useForm} from "antd/es/form/Form";
 import Input from "antd/es/input/Input";
 
 export default function DonateComponent() {
   const [optionSelected, setOptionSelected] = useState<string | number>();
-  const [form] = useForm();
+  // const [form] = useForm();
   return (
     <Col style={{width: "100%"}}>
       <Row
+        className="container-values-donate"
         style={{
           width: "100%",
           justifyContent: "center",
           height: "auto",
         }}
       >
-        <Title level={5}>Selecione um valor para doar:</Title>
         <Radio.Group
+          className="radio-group-value-donate"
           style={{display: "flex"}}
           onChange={e => setOptionSelected(e.target.value)}
         >
@@ -38,9 +38,9 @@ export default function DonateComponent() {
           <Radio.Button className="radioButton" value="other">
             outro valor
           </Radio.Button>
-          <Radio.Button className="radioButton" value="pix">
+          {/*   <Radio.Button className="radioButton" value="pix">
             Pix
-          </Radio.Button>
+          </Radio.Button> */}
         </Radio.Group>
       </Row>
       {optionSelected === "other" && (
@@ -53,6 +53,7 @@ export default function DonateComponent() {
           ></Input>
         </>
       )}
+      {/*  
       <br />
       <br />
       <Form form={form} layout="vertical" style={{width: "100%"}}>
@@ -70,8 +71,9 @@ export default function DonateComponent() {
             <Input placeholder="111"></Input>
           </Form.Item>
         </Row>
-      </Form>
-      <Button style={{width: "100%"}}>Fazer doação</Button>
+      </Form> */}
+      <br />
+      <Button className="button-donate-value" style={{width: "100%"}}>Fazer doação</Button>
     </Col>
   );
 }

@@ -1,29 +1,21 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import React, {useEffect} from "react";
+import React from "react";
 import MainComponent from "./components/mainComponent";
 import "./page.css";
-import {Button, Col, notification, Row, Typography} from "antd";
+import {Button, Col, Row, Typography} from "antd";
 import Title from "antd/es/typography/Title";
 import background from "./assets/image.png";
 import background2 from "./assets/image copy.png";
 import background3 from "./assets/_AR_9469.jpg";
 import ballet from "./assets/ballet.png";
 import footbolBoys from "./assets/footbol-boys.png";
-import {MdWarning} from "react-icons/md";
 import SubscriberComponent from "./components/subscriberComponent";
 import logo from "./assets/logo.png";
 import FilterForBanners from "./components/filterForBanners/filterForBanners.component";
 import Link from "next/link";
 
 export default function Home() {
-  useEffect(() => {
-    notification.info({
-      icon: <MdWarning></MdWarning>,
-      message: "Hope house em desenvolvimento. Versão mobile não disponível!",
-      duration: 5,
-    });
-  }, []);
   return (
     <MainComponent>
       <section className="backgroundHome banner">

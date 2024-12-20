@@ -28,3 +28,25 @@
 .container-form-subscriber>h1 {
     font-size: 70px;
 }
+
+@media(max-width:600px) {
+    .bannerBeVolunteer {
+        padding: 10px !important;
+    }
+
+    .container-projects-bevolunteer {
+        width: 100% !important;
+    }
+
+    .projects-be-volunteer {
+        flex-direction: column;
+    }
+
+    .container-form-subscriber {
+        width: 90%;
+    }
+
+    .container-form-subscriber>h1 {
+        font-size: 30px;
+    }
+}

@@ -6,7 +6,6 @@ import "../footer/style.css";
 import {Button, Row} from "antd";
 import Link from "next/link";
 import logo from "../../assets/logoIcon.png";
-import SocialIcons from "../socialIcons";
 import useMenuContext from "@/app/context/menuContext";
 
 export default function Menu() {
@@ -20,10 +19,10 @@ export default function Menu() {
       title: "O que fazemos",
       href: "/whatWeDo",
     },
-    {
+    /* {
       title: "Quem somos",
       href: "/whoWheAre",
-    },
+    }, */
     {
       title: "Eventos",
       href: "",
@@ -64,12 +63,11 @@ export default function Menu() {
         </Link>
         <Link
           style={{flex: 1, height: 55, backgroundColor: "#F89825"}}
-          href={"/"}
+          href={"/beVolunteer"}
         >
           Pegue uma Ação
         </Link>
       </Row>
-      <SocialIcons></SocialIcons>
     </div>
   );
 }

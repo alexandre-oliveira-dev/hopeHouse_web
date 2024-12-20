@@ -32,7 +32,7 @@ export default function BeVolunteer() {
       <section style={{fontSize: "50px !important"}} className="contentPages">
         <Title level={1}>PROJETOS</Title>
         <br />
-        <Col style={{width: "50%"}}>
+        <Col className="container-projects-bevolunteer" style={{width: "50%"}}>
           <Paragraph>
             Nossos projetos têm como foco promover impacto positivo e
             transformação social. Atuamos em diversas frentes, oferecendo apoio
@@ -46,7 +46,10 @@ export default function BeVolunteer() {
 
           <br />
           <br />
-          <Row style={{width: "100%", gap: "4rem"}}>
+          <Row
+            className="projects-be-volunteer"
+            style={{width: "100%", gap: "4rem"}}
+          >
             <Col style={{flex: 1}}>
               <Title style={{color: "#f1562a"}} level={2}>
                 Hope Family
