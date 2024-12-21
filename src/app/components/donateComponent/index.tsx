@@ -46,8 +46,8 @@ export default function DonateComponent() {
       {optionSelected === "other" && (
         <>
           <br />
-          <br />
           <Input
+            className="input-other-value"
             placeholder="Digite o valor que deseja!"
             // onChange={e => setOptionSelected(e.target.value)}
           ></Input>

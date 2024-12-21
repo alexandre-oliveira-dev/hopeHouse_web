@@ -119,7 +119,7 @@ export default function Home() {
                 <Button className="btn-style">
                   {" "}
                   <Link
-                    href={"/whoWheAre"}
+                    href={"/aboutUs"}
                     style={{
                       textDecoration: "none",
                       outline: "none",
@@ -177,7 +177,15 @@ export default function Home() {
                     height: "40px",
                   }}
                 >
-                  Apoie-nos
+                  <Link
+                    href={"/whatWeDo"}
+                    style={{
+                      textDecoration: "none",
+                      outline: "none",
+                    }}
+                  >
+                    Apoie-nos
+                  </Link>
                 </Button>
               </Col>
             </div>

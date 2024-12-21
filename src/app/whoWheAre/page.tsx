@@ -4,7 +4,6 @@
 import {Col, Row} from "antd";
 import MainComponent from "../components/mainComponent";
 import Title from "antd/es/typography/Title";
-import Paragraph from "antd/es/typography/Paragraph";
 import "./style.css";
 import {BsFacebook, BsTwitter} from "react-icons/bs";
 import FilterForBanners from "../components/filterForBanners/filterForBanners.component";
@@ -75,22 +74,8 @@ export default function WhatWeDo() {
 
         <Col className="col-box-title-whoweare">
           <Title className="title" level={1}>
-            QUEM NÓS SOMOS
+            MEMBROS DA HOPE
           </Title>
-
-          <Paragraph
-            style={{
-              color: "#fff",
-              fontSize: "20px",
-              margin: "0px !important",
-              width: "50%",
-            }}
-          >
-            Como uma instituição criativa que acredita em justiça social, o Hope
-            House se dedica a fornecer apoio e recursos para aqueles que mais
-            precisam. Nós acreditamos em capacitar indivíduos e comunidades,
-            promovendo a igualdade e a inclusão em todas as nossas iniciativas.
-          </Paragraph>
         </Col>
       </section>
       <section
@@ -99,7 +84,7 @@ export default function WhatWeDo() {
       >
         <Title level={1}>MEMBROS DA EQUIPE</Title>
         <br />
-        <Row className="members" gutter={[16, 16]}>
+        <Row className="members" >
           {members.map((item, index) => {
             return (
               <Col key={index}>

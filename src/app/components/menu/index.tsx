@@ -12,23 +12,23 @@ export default function Menu() {
   const {open, setOpen} = useMenuContext();
   const btns = [
     {
-      title: "sobre",
+      title: "Sobre nós",
+      disabled: false,
       href: "/aboutUs",
     },
     {
       title: "O que fazemos",
+      disabled: false,
       href: "/whatWeDo",
     },
-    /* {
-      title: "Quem somos",
-      href: "/whoWheAre",
-    }, */
     {
       title: "Eventos",
+      disabled: true,
       href: "",
     },
     {
       title: "Últimas Notícias",
+      disabled: true,
       href: "/lastNews",
     },
   ];
@@ -47,7 +47,12 @@ export default function Menu() {
       <Row className="btns-menu-mobile">
         {btns.map((button, index) => {
           return (
-            <Link onClick={() => setOpen(false)} href={button.href} key={index}>
+            <Link
+              hidden={button.disabled}
+              onClick={() => setOpen(false)}
+              href={button.href}
+              key={index}
+            >
               <Button className="btn-menu">{button.title}</Button>
             </Link>
           );
@@ -64,6 +69,7 @@ export default function Menu() {
         <Link
           style={{flex: 1, height: 55, backgroundColor: "#F89825"}}
           href={"/beVolunteer"}
+          onClick={() => setOpen(false)}
         >
           Pegue uma Ação
         </Link>

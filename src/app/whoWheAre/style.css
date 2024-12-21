@@ -3,6 +3,12 @@
     background-image: url('../assets/whowheareBanner.png');
 }
 
+.members {
+    width: 100%;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
 
 @media(max-width:600px) {
     .col-box-title-whoweare>h1 {
@@ -16,19 +22,8 @@
         font-size: 15px !important;
     }
 
-    .members {
-        flex-direction: column;
-        width: 100%;
-        align-items: center !important;
-
+    .members >div{
+        width: 50%;
     }
 
-    .members>div {
-        width: 100%;
-
-    }
-
-    .members>div>h1 {
-        width: 100% !important;
-    }
 }

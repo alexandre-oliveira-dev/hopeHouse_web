@@ -1,7 +1,9 @@
 .footer-component {
     width: 100%;
-    height: 400px;
+    padding: 2rem;
     display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
 }
 
 .input-footer-contact {
@@ -77,6 +79,13 @@
     .socialsIcons {
         width: 100% !important;
         padding: 2rem;
-        justify-content: center !important; 
+        justify-content: center !important;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-content>div>div{
+        width: 100% !important;
     }
 }

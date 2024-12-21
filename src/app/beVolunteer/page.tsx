@@ -4,7 +4,7 @@
 import React from "react";
 import MainComponent from "../components/mainComponent";
 import "./style.css";
-import {Button, Col, Form, Input, Radio, Row, Select} from "antd";
+import {Button, Col, Form, Input, Radio, Row} from "antd";
 import Title from "antd/es/typography/Title";
 import Paragraph from "antd/es/typography/Paragraph";
 import SubscriberComponent from "../components/subscriberComponent";
@@ -123,9 +123,6 @@ export default function BeVolunteer() {
                   placeholder="E-mail"
                   className="input-footer-contact"
                 ></Input>
-              </Form.Item>
-              <Form.Item label="País">
-                <Select placeholder="Selecione"></Select>
               </Form.Item>
             </Col>
             <Col
